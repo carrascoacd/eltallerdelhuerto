@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>El taller del huerto - Articles</title>
+    <description>Aprende de forma práctica tecnología con ellas para gente inexperta</description>
+    <link>
+    http://localhost:4000</link>
+    
+      
+      <item>
+        <title>La poda de rejuvenecimiento de un viejo Almendro</title>
+        
+          <description>&lt;p&gt;Lo que me hubiera gustado saber antes hacer la poda de rejuvenecimiento de un Almendro.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 04 Feb 2020 11:00:00 +0100</pubDate>
+        <link>
+        http://localhost:4000/poda-rejuvenecimiento-almendro</link>
+        <guid isPermaLink="true">http://localhost:4000/poda-rejuvenecimiento-almendro</guid>
+      </item>
+      
+    
+  </channel>
+</rss>

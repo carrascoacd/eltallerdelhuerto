@@ -104,6 +104,10 @@
     <link rel="alternate" type="application/rss+xml" title="El taller del huerto" href="/feed.xml" />
 
 
+    <!-- Cookie consent related things -->
+    <script src="https://eltallerdelhuerto.com/assets/js/consent.js"></script>
+    <link rel="stylesheet" typ="text/css" href="https://eltallerdelhuerto.com/assets/built/consent.css"></script>
+
 </head>
 <body class="home-template">
 
@@ -237,14 +241,6 @@ into the {body} of the default.hbs template -->
     <!-- The big email subscribe modal content -->
     
 
-    <!-- highlight.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
-    <script>$(document).ready(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-      });
-    });</script>
-
     <!-- jQuery + Fitvids, which makes all video embeds responsive -->
     <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -253,6 +249,14 @@ into the {body} of the default.hbs template -->
     </script>
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
 
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
 
     <!-- Paginator increased to "infinit" in _config.yml -->
     <!-- if paginator.posts  -->
@@ -264,20 +268,28 @@ into the {body} of the default.hbs template -->
 
     
 
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
 
-    <!-- Add Google Analytics  -->
+    <div id="cookie-notice"><span>Nos gustaría poder usar cookies de terceros para mejorar este sitio</span><a id="cookie-notice-accept" class="btn btn-primary btn-sm">Aprobar | </a><a href="/privacy" class="btn btn-primary btn-sm">Más información</a></div>
+<script>
+document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+    createCookie('cookie-notice-dismissed','true',31);
+    document.getElementById('cookie-notice').style.display = 'none';
+    location.reload();
+});
+</script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1QWDCLYE3"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  if(consentApproved() == true) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-M1QWDCLYE3');
+    gtag('config', 'G-M1QWDCLYE3');
+  }
 </script>
-
-    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
-    
 
     <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
     <!-- ghost_foot -->

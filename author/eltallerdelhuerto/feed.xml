@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-06T10:45:37+02:00</updated>
+  <updated>2020-04-07T11:07:08+02:00</updated>
   <id>https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml</id>
 
   
@@ -30,6 +30,176 @@
   
   
 
+  
+    <entry>
+      <title type="html">Construir una lámpara vintage usando restos de poda</title>
+      <link href="https://eltallerdelhuerto.com/diy-hacer-lampara-vintage" rel="alternate" type="text/html" title="Construir una lámpara vintage usando restos de poda" />
+      <published>2020-03-26T11:00:00+01:00</published>
+      <updated>2020-03-26T11:00:00+01:00</updated>
+      <id>https://eltallerdelhuerto.com/diy-hacer-lampara-vintage</id>
+      <content type="html" xml:base="https://eltallerdelhuerto.com/diy-hacer-lampara-vintage">&lt;p&gt;Vamos a ver cómo usar la poda de rejuvenecimiento de un Almendro para hacer un trabajo de bricolaje.&lt;/p&gt;
+
+&lt;p&gt;El diseño vintage hace referencia a elementos antiguos que cobran un significado especial a día de hoy.&lt;/p&gt;
+
+&lt;p&gt;En este caso, las bombillas que usaremos tienen ese característico diseño, ya que recuerdan a esas antiguas bombillas de filamentos que tanto se calentaban y que iluminan la habitación con una luz cálida y diferente.&lt;/p&gt;
+
+&lt;h2 id=&quot;materiales&quot;&gt;Materiales:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Un palo de madera&lt;/li&gt;
+  &lt;li&gt;Dos portalámparas&lt;/li&gt;
+  &lt;li&gt;Dos bombillas estilo vintage&lt;/li&gt;
+  &lt;li&gt;Cable trenzado y recubierto de cuerda&lt;/li&gt;
+  &lt;li&gt;Hilo negro&lt;/li&gt;
+  &lt;li&gt;Destornillador&lt;/li&gt;
+  &lt;li&gt;Tijeras&lt;/li&gt;
+  &lt;li&gt;Papel de lija&lt;/li&gt;
+  &lt;li&gt;Máquina de taladrar o segueta&lt;/li&gt;
+  &lt;li&gt;(Opcional). Formón&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/2020-03-26-diy-lampara-vintage/materials.jpg&quot; alt=&quot;Materiales para lampara vintage&quot; title=&quot;Materiales para lampara vintage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El portalámparas negro lo reservaremos para realizar otro trabajo de bricolaje, otro tipo de lámpara donde el negro sea el protagonista.&lt;/p&gt;
+
+&lt;p&gt;Este proyecto es muy bonito ya que te pone en contacto con la naturaleza. &lt;strong&gt;Puedes conseguir el palo en puntos de venta de leña&lt;/strong&gt;, pero te sugiero reserves un día soleado y des un paseo por una zona arbolada. Es muy probable que encuentres algún palo tirado en el suelo que te pueda servir.&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-conseguí-el-palo&quot;&gt;Cómo conseguí el palo&lt;/h2&gt;
+&lt;p&gt;El palo es de mi Almendro, de la &lt;a href=&quot;poda-rejuvenecimiento-almendro&quot;&gt;poda de rejuvenecimiento de hace tres años&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Aunque no tiene mucha dificultad, hay cosas que no tuve en cuenta en el diseño inicial, como que el agujero del portalámparas era un tanto pequeño o que no en todos los cables iba a circular corriente. Dejando uno de ellos a modo decorativo.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>El taller del huerto</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="tecnologia" />
+      
+
+      
+        <summary type="html">Vamos a ver cómo usar la poda de rejuvenecimiento de un Almendro para hacer un trabajo de bricolaje.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Arduino para el cuidado de plantas</title>
+      <link href="https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas" rel="alternate" type="text/html" title="Arduino para el cuidado de plantas" />
+      <published>2020-03-26T11:00:00+01:00</published>
+      <updated>2020-03-26T11:00:00+01:00</updated>
+      <id>https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas</id>
+      <content type="html" xml:base="https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas">&lt;p&gt;No solo se trata solo de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso.&lt;/p&gt;
+
+&lt;p&gt;Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero he hablado que es un microcontrolador, veamos qué es realmente. &lt;strong&gt;Un microcontrolador se trata de un circuito integrado que básicamente ejecuta operaciones programadas en base a unas entradas y unas salidas de datos.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;no-tengo-ni-idea-de-qué-es-un-circuito-integrado&quot;&gt;No tengo ni idea de qué es un circuito integrado&lt;/h3&gt;
+&lt;p&gt;Si ya has leído sobre este tema, puedes saltarte este apartado.&lt;/p&gt;
+
+&lt;p&gt;En otro post hablaré detalladamente sobre ello, pero podemos imaginar un circuito como una red de carreteras contectadas entre sí de forma cerrada. Los vehículos, son mensajeros, que circulan en las carreteras y transportan información. Información de si abrir o no una válvula de riego o de cuanta temperatura tenemos en el ambiente, por ejemplo.&lt;/p&gt;
+
+&lt;p&gt;La información que transportan los mensajeros la obtienen de &lt;strong&gt;entradas&lt;/strong&gt; hacia el circuito y hacia dónde la envían lo llamaremos &lt;strong&gt;salidas&lt;/strong&gt;. Lo que comunmente en inglés podemos ver como I/O (Input - Output).
+Algunos ejemplos elementos que generan mensajes en las entradas:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Sensor de humedad. Genera el mensaje % de humedad.&lt;/li&gt;
+  &lt;li&gt;Sensor de luminosidad. Genera el mensaje % de luminosidad&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Algunos elemplos de elementos que que reciben los mensajes de la salida:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Válvula de riego. Lee el mensaje “abrir” o “cerrar”&lt;/li&gt;
+  &lt;li&gt;Motor rotativo. Lee el mensaje “arrancar” o “parar”&lt;/li&gt;
+  &lt;li&gt;Una lámpara. Lee el mensaje “encender” o “apagar”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por lo tanto, un microcontrolador es un pequeño circuito integrado que dice qué hacer, cuando, cómo y dónde en base a nuestros mensajes. Es un mini cerebro, un &lt;strong&gt;procesador&lt;/strong&gt;. Y todo ello se lo decimos nosotros, los programadores. Sí tú vas a ser un programador, aunque seguro que ya lo eres.&lt;/p&gt;
+
+&lt;p&gt;Mira esto, un ejemplo de programa en tu calendario del móvil:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cuando sean las 8am de la mañana&lt;/li&gt;
+  &lt;li&gt;Recordarme que tengo que coger la bolsa de deporte de la mesa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y si lo aplicamos al mundo de las plantas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Si el sensor de humedad envía un mensaje diciendo que la humedad es 20%&lt;/li&gt;
+  &lt;li&gt;Abre la válvula de riego durante 10 minutos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por lo tanto, las dos frases, lo que se conoce como código, las guardaremos en la &lt;strong&gt;memoria&lt;/strong&gt; de nuestro microcontrolador para que las ejecute cuando sea necesario.&lt;/p&gt;
+
+&lt;h2 id=&quot;mucho-más-que-un-simple-microcontrolador&quot;&gt;Mucho más que un simple microcontrolador&lt;/h2&gt;
+&lt;p&gt;Cuando la gente pensamos o buscamos sobre Arduino vemos esto&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/2020-04-06-arduino-para-el-cuidado-de-plantas/arduino-uno.jpg&quot; alt=&quot;Arduino Uno. Circuito integrado&quot; title=&quot;Arduino Uno. Circuito integrado&quot; /&gt;
+&lt;a href=&quot;https://www.pinterest.com/pin/create/button/&quot; data-pin-do=&quot;buttonBookmark&quot;&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pero Arduino es más que un simple circuito integrado. Lo que vemos en la imagen es la parte tangible, la parte visible de Arduino, la placa. Sin embargo, &lt;strong&gt;Arduino se trata del software, el hardware, el equipo de desarrollo, la comunidad de usuarios, e incluso el espíritu y la filosofía de las personas alrededor.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Por todos esos motivos decidirse por esta tecnología puede ser un acierto. Vamos a tener infinidad de ayuda y documentación, pero también hay otras alternativas que veremos.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-que-no-sabías-esto&quot;&gt;¿A que no sabías esto?&lt;/h2&gt;
+&lt;p&gt;Mira que curioso, “arduino” es un nombre masculino e italiano que significa “amigo fuerte”. Fue creado en Italia, en Ivrea, ¿sabías que su nombre proviene de un rey? El rey Arduin de Ivrea, que ejerció su reinado hace miles de años.&lt;/p&gt;
+
+&lt;h2 id=&quot;y-cómo-podemos-aplicar-todo-esto-al-mundo-de-las-plantas&quot;&gt;Y cómo podemos aplicar todo esto al mundo de las plantas&lt;/h2&gt;
+&lt;p&gt;Lo veremos poco a poco en el blog, pero la cantidad de aplicaciones es infinita, tantas como ideas tengamos. Ya he comentado anteriormente alguna. Estamos hablando de un pequeño cerebro, que le podemos decir que ejecute acciones de forma programada. Por lo que algunas aplicaciones son:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Medir la humedad&lt;/li&gt;
+  &lt;li&gt;Medir la temperatura del suelo&lt;/li&gt;
+  &lt;li&gt;Medir la temperatura del aire&lt;/li&gt;
+  &lt;li&gt;Medir la intensidad viento&lt;/li&gt;
+  &lt;li&gt;Permitir el bombeo de agua&lt;/li&gt;
+  &lt;li&gt;Aplicar abono&lt;/li&gt;
+  &lt;li&gt;Y más!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y todo eso lo podemos hacer en base a lo que ya sabemos, déjame explicarme. El caso más simple es, imaginemos que nuestra Hortensia, que se trata de una planta con grandes requerimientos hídricos, le falta agua, podemos dejar que nuestro microcotronador gestione eso. Sobre todo en los meses más calurosos, donde incluso podemos perder a la planta.&lt;/p&gt;
+
+&lt;h2 id=&quot;aunque-nunca-va-a-sustituir-mis-cuidados&quot;&gt;Aunque nunca va a sustituir mis cuidados&lt;/h2&gt;
+&lt;p&gt;A las personas que nos gusta la naturaleza, nos apasiona ir al campo, tocar la tierra y regar nuestas bonitas plantas. Podemos ser un poco reticentes a la tecnología. Pero la tecnología no viene para quitarnos ese trabajo, simplemente nos ayuda en los momentos más críticos: unas vacaciones, unos meses muy ajetreados, olas de calor… en general aquel momento que sea rutinario o difícil y podamos automatizar.&lt;/p&gt;
+
+&lt;p&gt;Si a ello le sumamos las técnicas tradicionales podemos conseguir una sensación mucho mejor en todo lo que hacemos.&lt;/p&gt;
+
+&lt;p&gt;La tecnología nos permite cuidar mejor de nuestras plantas, dedicando el tiempo de la mejor forma posible para sus cuidados y para el cuidado de nuestros suelos.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>El taller del huerto</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="tecnologia" />
+      
+
+      
+        <summary type="html">No solo se trata solo de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">La poda de rejuvenecimiento de un viejo Almendro</title>

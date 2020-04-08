@@ -225,7 +225,7 @@ Algunos ejemplos elementos que generan mensajes en las entradas:</p>
   <li>Abre la válvula de riego durante 10 minutos</li>
 </ul>
 
-<p>Por lo tanto, las dos frases, lo que se conoce como código, las guardaremos en la <strong>memoria</strong> de nuestro microcontrolador para que las ejecute cuando sea necesario.</p>
+<p>Por lo tanto, las dos frases, lo que se conoce como código, las guardaremos en la <strong>memoria</strong> de nuestro microcontrolador para que las ejecute cuando sea necesario. No voy a entrar en detalle de los tipos de memoria que tenemos disponibles con Arduino en este post, pero lo veremos más en detalle.</p>
 
 <h2 id="mucho-más-que-un-simple-microcontrolador">Mucho más que un simple microcontrolador</h2>
 <p>Cuando la gente pensamos o buscamos sobre Arduino vemos esto</p>
@@ -233,6 +233,8 @@ Algunos ejemplos elementos que generan mensajes en las entradas:</p>
 <p><img src="assets/images/2020-04-06-arduino-para-el-cuidado-de-plantas/arduino-uno.jpg" alt="Arduino Uno. Circuito integrado" title="Arduino Uno. Circuito integrado" /></p>
 
 <p>Pero Arduino es más que un simple circuito integrado. Lo que vemos en la imagen es la parte tangible, la parte visible de Arduino, la placa. Sin embargo, <strong>Arduino se trata del software, el hardware, el equipo de desarrollo, la comunidad de usuarios, e incluso el espíritu y la filosofía de las personas alrededor.</strong></p>
+
+<p>Otro de los motivos por los que Arduino es tan potente, es porque <strong>el diseño del hardware de la placa</strong>, lo que hemos visto en la imagen, <strong>es open source</strong>. Ello hace que podamos encontrar placas a muy bajo coste de otros fabricantes, que por experiencia no se comportan tan bien en proyectos con puesta en producción, pero con propósito didáctico o bien para trabajos caseros es más que suficiente.</p>
 
 <p>Por todos esos motivos decidirse por esta tecnología puede ser un acierto. Vamos a tener infinidad de ayuda y documentación, pero también hay otras alternativas que veremos.</p>
 
@@ -252,6 +254,19 @@ Algunos ejemplos elementos que generan mensajes en las entradas:</p>
 </ul>
 
 <p>Y todo eso lo podemos hacer en base a lo que ya sabemos, déjame explicarme. El caso más simple es, imaginemos que nuestra Hortensia, que se trata de una planta con grandes requerimientos hídricos, le falta agua, podemos dejar que nuestro microcotronador gestione eso. Sobre todo en los meses más calurosos, donde incluso podemos perder a la planta.</p>
+
+<h2 id="vamos-con-un-ejemplo">¡Vamos con un ejemplo!</h2>
+<p>Vamos a construir un pequeño circuito que será la base para poder entender de qué estamos hablando, antes de ello necesitaremos ir a https://www.circuito.io/app</p>
+
+<p>Es una app muy intuitiva y que nos permite aprender sin necesidad de gastar dinero en hardware y ver los resultados. La verdad que está muy bien.</p>
+
+<ul>
+  <li>Inicialmente aparecerá el Arduino Uno la mesa de trabajo</li>
+  <li>En el buscador, buscamos “soil” y arrastramos a la mesa de trabajo el “Soil moisture sensor”. Nuestro sensor de humedad.</li>
+  <li>Y a continuación buscamos “led” y arrastramos.</li>
+</ul>
+
+<p>En este punto ya tenemos nuestro circuito montado, ¿a que ha sido fácil? Guarda esta referencia porque puede que te sea util a partir de ahora.</p>
 
 <h2 id="aunque-nunca-va-a-sustituir-mis-cuidados">Aunque nunca va a sustituir mis cuidados</h2>
 <p>A las personas que nos gusta la naturaleza, nos apasiona ir al campo, tocar la tierra y regar nuestas bonitas plantas. Podemos ser un poco reticentes a la tecnología. Pero la tecnología no viene para quitarnos ese trabajo, simplemente nos ayuda en los momentos más críticos: unas vacaciones, unos meses muy ajetreados, olas de calor… en general aquel momento que sea rutinario o difícil y podamos automatizar.</p>

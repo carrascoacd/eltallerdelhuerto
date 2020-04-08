@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/tag/tecnologia/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-07T11:08:49+02:00</updated>
+  <updated>2020-04-08T10:22:58+02:00</updated>
   <id>https://eltallerdelhuerto.com/tag/tecnologia/feed.xml</id>
 
   
@@ -75,7 +75,7 @@ Algunos ejemplos elementos que generan mensajes en las entradas:&lt;/p&gt;
   &lt;li&gt;Abre la válvula de riego durante 10 minutos&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Por lo tanto, las dos frases, lo que se conoce como código, las guardaremos en la &lt;strong&gt;memoria&lt;/strong&gt; de nuestro microcontrolador para que las ejecute cuando sea necesario.&lt;/p&gt;
+&lt;p&gt;Por lo tanto, las dos frases, lo que se conoce como código, las guardaremos en la &lt;strong&gt;memoria&lt;/strong&gt; de nuestro microcontrolador para que las ejecute cuando sea necesario. No voy a entrar en detalle de los tipos de memoria que tenemos disponibles con Arduino en este post, pero lo veremos más en detalle.&lt;/p&gt;
 
 &lt;h2 id=&quot;mucho-más-que-un-simple-microcontrolador&quot;&gt;Mucho más que un simple microcontrolador&lt;/h2&gt;
 &lt;p&gt;Cuando la gente pensamos o buscamos sobre Arduino vemos esto&lt;/p&gt;
@@ -83,6 +83,8 @@ Algunos ejemplos elementos que generan mensajes en las entradas:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;assets/images/2020-04-06-arduino-para-el-cuidado-de-plantas/arduino-uno.jpg&quot; alt=&quot;Arduino Uno. Circuito integrado&quot; title=&quot;Arduino Uno. Circuito integrado&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Pero Arduino es más que un simple circuito integrado. Lo que vemos en la imagen es la parte tangible, la parte visible de Arduino, la placa. Sin embargo, &lt;strong&gt;Arduino se trata del software, el hardware, el equipo de desarrollo, la comunidad de usuarios, e incluso el espíritu y la filosofía de las personas alrededor.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Otro de los motivos por los que Arduino es tan potente, es porque &lt;strong&gt;el diseño del hardware de la placa&lt;/strong&gt;, lo que hemos visto en la imagen, &lt;strong&gt;es open source&lt;/strong&gt;. Ello hace que podamos encontrar placas a muy bajo coste de otros fabricantes, que por experiencia no se comportan tan bien en proyectos con puesta en producción, pero con propósito didáctico o bien para trabajos caseros es más que suficiente.&lt;/p&gt;
 
 &lt;p&gt;Por todos esos motivos decidirse por esta tecnología puede ser un acierto. Vamos a tener infinidad de ayuda y documentación, pero también hay otras alternativas que veremos.&lt;/p&gt;
 
@@ -102,6 +104,19 @@ Algunos ejemplos elementos que generan mensajes en las entradas:&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Y todo eso lo podemos hacer en base a lo que ya sabemos, déjame explicarme. El caso más simple es, imaginemos que nuestra Hortensia, que se trata de una planta con grandes requerimientos hídricos, le falta agua, podemos dejar que nuestro microcotronador gestione eso. Sobre todo en los meses más calurosos, donde incluso podemos perder a la planta.&lt;/p&gt;
+
+&lt;h2 id=&quot;vamos-con-un-ejemplo&quot;&gt;¡Vamos con un ejemplo!&lt;/h2&gt;
+&lt;p&gt;Vamos a construir un pequeño circuito que será la base para poder entender de qué estamos hablando, antes de ello necesitaremos ir a https://www.circuito.io/app&lt;/p&gt;
+
+&lt;p&gt;Es una app muy intuitiva y que nos permite aprender sin necesidad de gastar dinero en hardware y ver los resultados. La verdad que está muy bien.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Inicialmente aparecerá el Arduino Uno la mesa de trabajo&lt;/li&gt;
+  &lt;li&gt;En el buscador, buscamos “soil” y arrastramos a la mesa de trabajo el “Soil moisture sensor”. Nuestro sensor de humedad.&lt;/li&gt;
+  &lt;li&gt;Y a continuación buscamos “led” y arrastramos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En este punto ya tenemos nuestro circuito montado, ¿a que ha sido fácil? Guarda esta referencia porque puede que te sea util a partir de ahora.&lt;/p&gt;
 
 &lt;h2 id=&quot;aunque-nunca-va-a-sustituir-mis-cuidados&quot;&gt;Aunque nunca va a sustituir mis cuidados&lt;/h2&gt;
 &lt;p&gt;A las personas que nos gusta la naturaleza, nos apasiona ir al campo, tocar la tierra y regar nuestas bonitas plantas. Podemos ser un poco reticentes a la tecnología. Pero la tecnología no viene para quitarnos ese trabajo, simplemente nos ayuda en los momentos más críticos: unas vacaciones, unos meses muy ajetreados, olas de calor… en general aquel momento que sea rutinario o difícil y podamos automatizar.&lt;/p&gt;

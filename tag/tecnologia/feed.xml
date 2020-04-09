@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/tag/tecnologia/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-09T12:50:06+02:00</updated>
+  <updated>2020-04-09T16:53:38+02:00</updated>
   <id>https://eltallerdelhuerto.com/tag/tecnologia/feed.xml</id>
 
   
@@ -16,7 +16,7 @@
   
 
   
-    <subtitle>Aprende de forma práctica naturaleza y tecnología con las plantas para gente curiosa</subtitle>
+    <subtitle>Si eres curios@ aprende de forma práctica cómo aplicar la tecnología en el cuidado de tus plantas</subtitle>
   
 
   
@@ -46,7 +46,7 @@
 
 &lt;p&gt;En otro post hablaré detalladamente sobre ello, pero podemos imaginar un circuito como una red de carreteras contectadas entre sí de forma cerrada. Los vehículos, son mensajeros, que circulan en las carreteras y transportan información. Información de si abrir o no una válvula de riego o de cuanta temperatura tenemos en el ambiente, por ejemplo.&lt;/p&gt;
 
-&lt;p&gt;La información que transportan los mensajeros la obtienen de &lt;strong&gt;entradas&lt;/strong&gt; hacia el circuito y hacia dónde la envían lo llamaremos &lt;strong&gt;salidas&lt;/strong&gt;. Lo que comunmente en inglés podemos ver como I/O (Input - Output).
+&lt;p&gt;La información que transportan los mensajeros la obtienen de &lt;strong&gt;entradas&lt;/strong&gt; hacia el circuito y hacia donde la envían lo llamaremos &lt;strong&gt;salidas&lt;/strong&gt;. Lo que comunmente en inglés podemos ver como I/O (Input - Output).
 Algunos ejemplos elementos que generan mensajes en las entradas:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Sensor de humedad. Genera el mensaje % de humedad.&lt;/li&gt;

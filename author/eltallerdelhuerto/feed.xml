@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-08T10:22:58+02:00</updated>
+  <updated>2020-04-09T12:49:30+02:00</updated>
   <id>https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml</id>
 
   
@@ -288,6 +288,105 @@ Algunos ejemplos elementos que generan mensajes en las entradas:&lt;/p&gt;
 
       
         <summary type="html">Lo que me hubiera gustado saber antes de hacer la poda de rejuvenecimiento de un Almendro.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Programar cuidados en C: cómo empezar</title>
+      <link href="https://eltallerdelhuerto.com/programar-101" rel="alternate" type="text/html" title="Programar cuidados en C: cómo empezar" />
+      <published>2020-02-04T11:00:00+01:00</published>
+      <updated>2020-02-04T11:00:00+01:00</updated>
+      <id>https://eltallerdelhuerto.com/programar-101</id>
+      <content type="html" xml:base="https://eltallerdelhuerto.com/programar-101">&lt;p&gt;C es el lenguaje de programación que usamos en Arduino para programar las tareas de cuidado que necesitan nuestras plantas.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Un lenguaje de programación se trata de un lenguaje pensado para instruir a un ordenador a ejecutar tareas&lt;/strong&gt;, como he comentado. Como cualquier lenguaje tiene una serie de reglas gramaticales y vocabulario.&lt;/p&gt;
+
+&lt;h2 id=&quot;c-va-a-ser-nuestro-nuevo-lenguaje&quot;&gt;C va a ser nuestro nuevo lenguaje&lt;/h2&gt;
+&lt;p&gt;Es importante saber Inglés, este será el único post donde escribiremos código de ejemplo en español. ¿Por qué? porque es el idioma por defecto que los programadores usamos, asi que, ¡vamos a ver qué es C!&lt;/p&gt;
+
+&lt;p&gt;Si estás leyendo este artículo es muy probable que hables Español, pues bien, ya sabes un lenguaje con una complejidad bastante mayor que el que vamos a hablar: C.&lt;/p&gt;
+
+&lt;p&gt;Hay ingente documentación sobre este lenguaje, nuestros sistemas operativos se basan en este lenguaje, sistemas a tiempo real e infinidad de aplicaciones que usamos diariamente. En este post no voy a entrar en detalle sobre él, pero si vamos a ver sus aplicaciones a la hora de programar en Arduino.&lt;/p&gt;
+
+&lt;p&gt;Antes de ello, tenemos que familiarizarnos dos conceptos:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Función&lt;/strong&gt;. Es una acción que vamos a programar y a la que le daremos un nombre. Por ejemplo:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;andar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;persona&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;darCincoPasos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Programa&lt;/strong&gt;, en Arduino suele llamarse Sketch, para simplificar se trata de un conjunto de instrucciones que se van a ejecutar.
+Por ejemplo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;andar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;persona&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;darCincoPasos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;andar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;En el programa anterior tenemos tres funciones, una creada por nosotros: &lt;em&gt;andar&lt;/em&gt; y las otras dos son funciones que veremos en otro post, y que son las que nuestro Sketch va a usar siempre.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-la-práctica-el-ide&quot;&gt;A la práctica: el IDE&lt;/h2&gt;
+&lt;p&gt;Vale, antes de ello voy a explicar que es un IDE. Un IDE son las siglas de Entorno de Desarrollo Integrado (Integrated Development Environment). Y consiste en una aplicación que nos va a permitir escribir nuestro programa.&lt;/p&gt;
+
+&lt;p&gt;Actualmente contamos con dos opciones, la opción Web y la opción nativa, la que descargamos a nuestro ordenador. Para este ejemplo, vamos a comenzar con la opción web. Por lo que iremos al IDE online de Arduino: &lt;a href=&quot;https://create.arduino.cc&quot;&gt;Arduino Create&lt;/a&gt;, nos registramos y seleccionamos&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/2020-04-09-programar-101/arduino-create.png&quot; alt=&quot;Arduino Create. Web Editor&quot; title=&quot;Arduino Create. Web editor&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;¡Y tachan! tenemos nuestro primer Sketch con las funciones que he comentado anteriormente. Vamos a parar por un momento para asimilar todo lo que hemos visto.&lt;/p&gt;
+
+&lt;h2 id=&quot;siguientes-pasos&quot;&gt;Siguientes pasos&lt;/h2&gt;
+&lt;p&gt;Hemos visto dónde escribir un Sketch de Arduino y qué significa. Ahora necesitas un Arduino :) ¿Por qué? porque para poder seguir y ver los resultados de forma real es lo más recomendable.&lt;/p&gt;
+
+&lt;p&gt;El primero que compré yo para jugar y experimentar fue &lt;a href=&quot;http://rover.ebay.com/rover/1/1185-53479-19255-0/1?ff3=4&amp;amp;pub=5575581389&amp;amp;toolid=10001&amp;amp;campid=5338673600&amp;amp;customid=&amp;amp;mpre=https%3A%2F%2Fwww.ebay.es%2Fitm%2FUNO-R3-Rev3-ATmega328-16U2-Arduino-100-Compatible-cable-USB-ULTIMA-VERSION-B009%2F201530741428%3Fhash%3Ditem2eec2b12b4%3Ag%3AKKAAAOSwFdtXxD45&quot;&gt;este similar Arduino UNO&lt;/a&gt; No es el original, pero funciona perfectamente ya que es 100% compatible. &lt;a href=&quot;arduino-para-el-cuidado-de-plantas&quot;&gt;Recordemos que Arduino es hardware open source&lt;/a&gt;, por lo que cualquiera puede crear sus propias placas.&lt;/p&gt;
+
+&lt;p&gt;Más adelante veremos que hay otras placas más pequeñas o más potentes, pero por el momento esta nos va a dar mucho juego.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>El taller del huerto</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="tecnologia" />
+      
+
+      
+        <summary type="html">C es el lenguaje de programación que usamos en Arduino para programar las tareas de cuidado que necesitan nuestras plantas.</summary>
       
 
       

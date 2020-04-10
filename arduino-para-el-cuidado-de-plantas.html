@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
     
     <!-- This tag outputs SEO meta+structured data and other important settings -->
-    <meta name="description" content="Si eres curios@ aprende de forma práctica cómo aplicar la tecnología en el cuidado de tus plantas" />
+    <meta name="description" content="Si eres curios@, aprende de forma práctica cómo aplicar la tecnología en el cuidado de tus plantas" />
     
     <!-- Favicon related data https://realfavicongenerator.net -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://eltallerdelhuerto.com/assets/images/favicon/apple-touch-icon.png">
@@ -37,7 +37,7 @@
     <meta property="og:site_name" content="El taller del huerto" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Arduino para el cuidado de plantas" />
-    <meta property="og:description" content="No solo se trata solo de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso. Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero he hablado que es un microcontrolador, veamos" />
+    <meta property="og:description" content="No solo se trata de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso. Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero veamos qué es realmente un microcontrolador. Un microcontrolador" />
     <meta property="og:url" content="https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas" />
     <meta property="og:image" content="https://eltallerdelhuerto.com/assets/images/2020-04-06-arduino-para-el-cuidado-de-plantas/cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -47,7 +47,7 @@
     <meta property="article:tag" content="Tecnologia" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Arduino para el cuidado de plantas" />
-    <meta name="twitter:description" content="No solo se trata solo de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso. Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero he hablado que es un microcontrolador, veamos" />
+    <meta name="twitter:description" content="No solo se trata de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso. Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero veamos qué es realmente un microcontrolador. Un microcontrolador" />
     <meta name="twitter:url" content="https://eltallerdelhuerto.com/" />
     <meta name="twitter:image" content="https://eltallerdelhuerto.com/assets/images/2020-04-06-arduino-para-el-cuidado-de-plantas/cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -79,7 +79,7 @@
         "@type": "WebPage",
         "@id": "https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas"
     },
-    "description": "No solo se trata solo de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso. Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero he hablado que es un microcontrolador, veamos"
+    "description": "No solo se trata de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso. Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero veamos qué es realmente un microcontrolador. Un microcontrolador"
 }
     </script>
 
@@ -173,62 +173,69 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>No solo se trata solo de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso.</p>
+                    <p>No solo se trata de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso.</p>
 
-<p>Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero he hablado que es un microcontrolador, veamos qué es realmente. <strong>Un microcontrolador se trata de un circuito integrado que básicamente ejecuta operaciones programadas en base a unas entradas y unas salidas de datos.</strong></p>
+<p>Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero veamos qué es realmente un microcontrolador. <strong>Un microcontrolador se trata de un circuito integrado que básicamente ejecuta operaciones programadas en base a unas entradas y unas salidas de datos.</strong></p>
 
 <h3 id="no-tengo-ni-idea-de-qué-es-un-circuito-integrado">No tengo ni idea de qué es un circuito integrado</h3>
 <p>Si ya has leído sobre este tema, puedes saltarte este apartado.</p>
 
-<p>En otro post hablaré detalladamente sobre ello, pero podemos imaginar un circuito como una red de carreteras contectadas entre sí de forma cerrada. Los vehículos, son mensajeros, que circulan en las carreteras y transportan información. Información de si abrir o no una válvula de riego o de cuanta temperatura tenemos en el ambiente, por ejemplo.</p>
+<p>En otro post hablaré detalladamente sobre esto, pero podemos imaginar un circuito como una red de carreteras contectadas entre sí de forma cerrada. Los vehículos son mensajeros que circulan en las carreteras y transportan <strong>datos</strong> sobre, por ejemplo, la temperatura del ambiente o sobre si abrir o cerrar una válvula de riego.</p>
 
-<p>La información que transportan los mensajeros la obtienen de <strong>entradas</strong> hacia el circuito y hacia donde la envían lo llamaremos <strong>salidas</strong>. Lo que comunmente en inglés podemos ver como I/O (Input - Output).
-Algunos ejemplos elementos que generan mensajes en las entradas:</p>
+<p>Podemos diferenciar entre datos de <strong>entrada</strong> y datos de <strong>salida</strong>, lo que comunmente en inglés podemos ver como I/O (Input - Output).</p>
+
+<p>Los datos de entrada se generan mediante sensores que capturan información del exterior, como por ejemplo la humedad o el viento. Estos datos se procesan en el microcontrolador y se producen unos datos de salida que van destinados a dispositivos que los interpretan.</p>
+
+<p>Algunos ejemplos de elementos que generan <strong>datos de entrada</strong> son:</p>
 <ul>
-  <li>Sensor de humedad. Genera el mensaje % de humedad.</li>
-  <li>Sensor de luminosidad. Genera el mensaje % de luminosidad</li>
+  <li>Sensores de humedad. Generan el mensaje % de humedad.</li>
+  <li>Sensores de luminosidad. Generan el mensaje % de luminosidad.</li>
 </ul>
 
-<p>Algunos elemplos de elementos que que reciben los mensajes de la salida:</p>
+<p>Y algunos ejemplos de elementos que leen los <strong>datos de salida</strong> son:</p>
 <ul>
-  <li>Válvula de riego. Lee el mensaje “abrir” o “cerrar”</li>
-  <li>Motor rotativo. Lee el mensaje “arrancar” o “parar”</li>
-  <li>Una lámpara. Lee el mensaje “encender” o “apagar”</li>
+  <li>Válvulas de riego. Leen el mensaje “abrir” o “cerrar”.</li>
+  <li>Motores rotativos. Leen el mensaje “arrancar” o “parar”.</li>
+  <li>Lámparas. Leen el mensaje “encender” o “apagar”.</li>
 </ul>
 
-<p>Por lo tanto, un microcontrolador es un pequeño circuito integrado que dice qué hacer, cuando, cómo y dónde en base a nuestros mensajes. Es un mini cerebro, un <strong>procesador</strong>. Y todo ello se lo decimos nosotros, los programadores. Sí tú vas a ser un programador, aunque seguro que ya lo eres.</p>
+<p>Por lo tanto, un microcontrolador es un pequeño circuito integrado que ejecuta tareas en base a datos. Es un mini cerebro, un <strong>procesador</strong>. Y cómo, cuándo y dónde tiene que ejecutar las tareas se lo decimos nosotros, los programadores. Sí, tú vas a ser un programador, aunque seguro que ya lo eres.</p>
 
-<p>Mira esto, un ejemplo de programa en tu calendario del móvil:</p>
+<p>Mira, un ejemplo de tarea en tu calendario del móvil:</p>
 <ul>
   <li>Cuando sean las 8am de la mañana</li>
   <li>Recordarme que tengo que coger la bolsa de deporte de la mesa</li>
 </ul>
 
-<p>Y si lo aplicamos al mundo de las plantas:</p>
+<p>Otro ejemplo de <strong>tarea</strong> aplicado al mundo de las plantas sería:</p>
 
 <ul>
-  <li>Si el sensor de humedad envía un mensaje diciendo que la humedad es 20%</li>
-  <li>Abre la válvula de riego durante 10 minutos</li>
+  <li>Si el sensor de humedad envía un mensaje diciendo que la humedad es 20% (dato de entrada).</li>
+  <li>Abre la válvula de riego durante 10 minutos (dato de salida).</li>
 </ul>
 
-<p>Por lo tanto, las dos frases, lo que se conoce como código, las guardaremos en la <strong>memoria</strong> de nuestro microcontrolador para que las ejecute cuando sea necesario. No voy a entrar en detalle de los tipos de memoria que tenemos disponibles con Arduino en este post, pero lo veremos más en detalle.</p>
+<p>Por lo tanto, las tareas las guardaremos en la <strong>memoria</strong> de nuestro microcontrolador para que las ejecute cuando sea necesario. No voy a entrar en detalle de los tipos de memoria que tenemos disponibles con Arduino en este post, pero lo veremos más en detalle.</p>
 
 <h2 id="mucho-más-que-un-simple-microcontrolador">Mucho más que un simple microcontrolador</h2>
-<p>Cuando la gente pensamos o buscamos sobre Arduino vemos esto</p>
+<p>Cuando la gente pensamos o buscamos sobre Arduino vemos esto:</p>
 
 <p><img src="assets/images/2020-04-06-arduino-para-el-cuidado-de-plantas/arduino-uno.jpg" alt="Arduino Uno. Circuito integrado" title="Arduino Uno. Circuito integrado" /></p>
 
-<p>Pero Arduino es más que un simple circuito integrado. Lo que vemos en la imagen es la parte tangible, la parte visible de Arduino, la placa. Sin embargo, <strong>Arduino se trata del software, el hardware, el equipo de desarrollo, la comunidad de usuarios, e incluso el espíritu y la filosofía de las personas alrededor.</strong></p>
+<p>Pero Arduino es más que un simple circuito integrado. Lo que vemos en la imagen es la parte tangible, la parte visible de Arduino, la placa. Sin embargo, <strong>Arduino se trata del software, el hardware, el equipo de desarrollo, la comunidad de usuarios e incluso el espíritu y la filosofía de las personas de alrededor.</strong></p>
 
-<p>Otro de los motivos por los que Arduino es tan potente, es porque <strong>el diseño del hardware de la placa</strong>, lo que hemos visto en la imagen, <strong>es open source</strong>. Ello hace que podamos encontrar placas a muy bajo coste de otros fabricantes, que por experiencia no se comportan tan bien en proyectos con puesta en producción, pero con propósito didáctico o bien para trabajos caseros es más que suficiente.</p>
+<p>Otro de los motivos por los que Arduino es tan potente es porque <strong>el diseño del hardware de la placa</strong>, lo que hemos visto en la imagen, <strong>es open source</strong>. Esto hace que podamos encontrar placas a muy bajo coste de otros fabricantes, ya que cualquier empresa puede fabricarlo en base a este diseño. Por experiencia, no se comportan tan bien en proyectos con puesta en producción, pero con propósito didáctico o bien para trabajos caseros son más que suficiente.</p>
 
-<p>Por todos esos motivos decidirse por esta tecnología puede ser un acierto. Vamos a tener infinidad de ayuda y documentación, pero también hay otras alternativas que veremos.</p>
+<p>Por estos motivos decidirse por Arduino es todo un acierto, ya que vamos a tener infinidad de ayuda y documentación. Aun así, también veremos otras alternativas más adelante en el blog.</p>
 
 <h2 id="a-que-no-sabías-esto">¿A que no sabías esto?</h2>
-<p>Mira que curioso, “arduino” es un nombre masculino e italiano que significa “amigo fuerte”. Fue creado en Italia, en Ivrea, ¿sabías que su nombre proviene de un rey? El rey Arduin de Ivrea, que ejerció su reinado hace miles de años.</p>
+<p>Mira qué curioso: “arduino” es un nombre masculino e italiano que significa “amigo fuerte”. El nombre proviene del rey Arduin de Ivrea, que reinó hace miles de años.</p>
 
-<h2 id="y-cómo-podemos-aplicar-todo-esto-al-mundo-de-las-plantas">Y cómo podemos aplicar todo esto al mundo de las plantas</h2>
-<p>Lo veremos poco a poco en el blog, pero la cantidad de aplicaciones es infinita, tantas como ideas tengamos. Ya he comentado anteriormente alguna. Estamos hablando de un pequeño cerebro, que le podemos decir que ejecute acciones de forma programada. Por lo que algunas aplicaciones son:</p>
+<h2 id="y-cómo-podemos-aplicar-arduino-al-mundo-de-las-plantas">¿Y cómo podemos aplicar Arduino al mundo de las plantas?</h2>
+<p>Lo veremos poco a poco en el blog, pero la cantidad de aplicaciones es infinita, prácticamente como tantas ideas tengamos. No olvides que estamos hablando de un pequeño cerebro al que le podemos decir que ejecute tareas de forma programada.</p>
+
+<p>Por ejemplo, imagina que a tu Hortensia (una planta con grandes requerimientos hídricos) le falta agua. Puedes intentar mantenerla hidratada regándola diariamente, o puedes dejar que tu microcontrolador se encargue de la cantidad de agua que necesita, olvidándote de tener que hacerlo tú mismo. Gracias a él podrías establecer unos criterios de riego que permitiesen mantener con vida tu Hortensia incluso cuando no estuvieses en casa o hiciese mucho calor. ¿Son o no son ventajas a tener en cuenta para aprender a automatizar utilizando Arduino?</p>
+
+<p>Algunas otras tareas en las que podrías aplicar Arduino serían:</p>
 <ul>
   <li>Medir la humedad</li>
   <li>Medir la temperatura del suelo</li>
@@ -236,15 +243,11 @@ Algunos ejemplos elementos que generan mensajes en las entradas:</p>
   <li>Medir la intensidad viento</li>
   <li>Permitir el bombeo de agua</li>
   <li>Aplicar abono</li>
-  <li>Y más!</li>
+  <li>¡Y más!</li>
 </ul>
 
-<p>Y todo eso lo podemos hacer en base a lo que ya sabemos, déjame explicarme. El caso más simple es, imaginemos que nuestra Hortensia, que se trata de una planta con grandes requerimientos hídricos, le falta agua, podemos dejar que nuestro microcotronador gestione eso. Sobre todo en los meses más calurosos, donde incluso podemos perder a la planta.</p>
-
 <h2 id="vamos-con-un-ejemplo">¡Vamos con un ejemplo!</h2>
-<p>Vamos a construir un pequeño circuito que será la base para poder entender de qué estamos hablando, antes de ello necesitaremos ir a https://www.circuito.io/app</p>
-
-<p>Es una app muy intuitiva y que nos permite aprender sin necesidad de gastar dinero en hardware y ver los resultados. La verdad que está muy bien.</p>
+<p>Vamos a construir un pequeño circuito que será la base para poder entender de qué estamos hablando. Lo primero que tendrás que hacer es ir a https://www.circuito.io/app. Circuito.io es una app muy intuitiva y que nos permitirá aprender cómo quedaría nuestro diseño sin necesidad de gastar dinero en hardware y ver los resultados. La verdad que es que está muy bien.</p>
 
 <ul>
   <li>Inicialmente aparecerá el Arduino Uno la mesa de trabajo</li>
@@ -252,14 +255,12 @@ Algunos ejemplos elementos que generan mensajes en las entradas:</p>
   <li>Y a continuación buscamos “led” y arrastramos.</li>
 </ul>
 
-<p>En este punto ya tenemos nuestro circuito montado, ¿a que ha sido fácil? Guarda esta referencia porque puede que te sea util a partir de ahora.</p>
+<p>En este punto ya tenemos nuestro circuito montado. ¿A que ha sido fácil? Guarda esta referencia porque puede que te sea útil a partir de ahora.</p>
 
-<h2 id="aunque-nunca-va-a-sustituir-mis-cuidados">Aunque nunca va a sustituir mis cuidados</h2>
-<p>A las personas que nos gusta la naturaleza, nos apasiona ir al campo, tocar la tierra y regar nuestas bonitas plantas. Podemos ser un poco reticentes a la tecnología. Pero la tecnología no viene para quitarnos ese trabajo, simplemente nos ayuda en los momentos más críticos: unas vacaciones, unos meses muy ajetreados, olas de calor… en general aquel momento que sea rutinario o difícil y podamos automatizar.</p>
+<h2 id="aunque-nunca-va-a-sustituir-tus-cuidados">Aunque nunca va a sustituir tus cuidados</h2>
+<p>A las personas que nos gusta la naturaleza, nos apasiona ir al campo, tocar la tierra y regar nuestras bonitas plantas, podemos sentirnos un poco reticentes a la hora de incorporar la tecnología a estos momentos. Pero la tecnología no viene para quitarnos este trabajo, sino que nos ayuda en los momentos más críticos: unas vacaciones, unos meses muy ajetreados, olas de calor. La tecnología nos permite gestionar mejor el tiempo del cuidado de nuestras plantas y nuestros suelos.</p>
 
-<p>Si a ello le sumamos las técnicas tradicionales podemos conseguir una sensación mucho mejor en todo lo que hacemos.</p>
-
-<p>La tecnología nos permite cuidar mejor de nuestras plantas, dedicando el tiempo de la mejor forma posible para sus cuidados y para el cuidado de nuestros suelos.</p>
+<p>Si a ello le sumas las técnicas tradicionales, descubrirás que puedes conseguir una sensación muy gratificante y especial en el cuidados de tus plantas.</p>
 
                 </div>
             </section>

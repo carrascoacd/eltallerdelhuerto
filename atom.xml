@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>El taller del huerto - Articles</title>
-    <description>Si eres curios@ aprende de forma práctica cómo aplicar la tecnología en el cuidado de tus plantas</description>
+    <description>Si eres curios@, aprende de forma práctica cómo aplicar la tecnología en el cuidado de tus plantas</description>
     <link>
     https://eltallerdelhuerto.com</link>
     
@@ -10,7 +10,7 @@
       <item>
         <title>Arduino para el cuidado de plantas</title>
         
-          <description>&lt;p&gt;No solo se trata solo de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso.&lt;/p&gt;
+          <description>&lt;p&gt;No solo se trata de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso.&lt;/p&gt;
 
 </description>
         

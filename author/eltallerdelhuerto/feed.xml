@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-10T13:38:09+02:00</updated>
+  <updated>2020-04-19T12:59:47+02:00</updated>
   <id>https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml</id>
 
   
@@ -30,6 +30,134 @@
   
   
 
+  
+    <entry>
+      <title type="html">Sensor de humedad capacitivo vs resistivo</title>
+      <link href="https://eltallerdelhuerto.com/sensor-capacitivo-vs-resistivo" rel="alternate" type="text/html" title="Sensor de humedad capacitivo vs resistivo" />
+      <published>2020-04-15T12:00:00+02:00</published>
+      <updated>2020-04-15T12:00:00+02:00</updated>
+      <id>https://eltallerdelhuerto.com/sensor-capacitivo-vs-resistivo</id>
+      <content type="html" xml:base="https://eltallerdelhuerto.com/sensor-capacitivo-vs-resistivo">&lt;p&gt;Por qué un sensor de humedad capacitivo es generalmente mejor opción que uno resistivo para nuestros proyectos.&lt;/p&gt;
+
+&lt;p&gt;Cuando comenzamos un proyecto en el que la medición de la humedad del suelo es un factor básico en la monitorización y el cuidado de nuestras plantas y cultivos, tenemos que elegir un sensor.&lt;/p&gt;
+
+&lt;p&gt;Un sensor lo define la RAE como: “Dispositivo que detecta una determinada acción externa, temperatura, presión, etc., y la transmite adecuadamente.”. Aunque una definición más técnica podría ser la siguiente: &lt;strong&gt;se trata de un dispositivo que permite detectar cambios físicos o químicos, como por ejemplo la presión o la variación de una carga eléctrica.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;En este post vamos a ver la experiencia que tuve con los principales sensores (no profesionales) que hay en el mercado. Podemos diferenciar dos, los sensores &lt;strong&gt;resistivos&lt;/strong&gt; y los sensores &lt;strong&gt;capacitivos&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-un-sensor-resistivo&quot;&gt;¿Qué es un sensor resistivo?&lt;/h2&gt;
+&lt;p&gt;Un sensor resistivo se basa en el principio de la resistencia de los materiales. Entendemos por &lt;strong&gt;resistencia como la capacidad de un cuerpo o material para disminuir la corriente eléctrica que pasa a través de él.&lt;/strong&gt; Esta propiedad la encontramos en cualquier &lt;a href=&quot;arduino-para-el-cuidado-de-plantas&quot;&gt;circuito integrado&lt;/a&gt; y son un componente que marca el diseño de nuestros sistemas, y por lo tanto, de nuestra sociedad.&lt;/p&gt;
+
+&lt;p&gt;Podemos medir la resistencia como &lt;code&gt;R=ρ*l/A&lt;/code&gt;. Donde &lt;strong&gt;ρ (rho)&lt;/strong&gt; es la resistividad, &lt;strong&gt;l&lt;/strong&gt; es la la longitud y &lt;strong&gt;A&lt;/strong&gt; el área transversal o grosor. 
+Imaginemos un trozo de cobre de:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;0.20m (metros) de longitud.&lt;/li&gt;
+  &lt;li&gt;3.14mm^2 (milímetros al cuadrado) área transversal.&lt;/li&gt;
+  &lt;li&gt;0.0172 Ω (ohmios) es la resistividad del cobre.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La resistencia sería &lt;code&gt;R=0.0172*0.2/3.14&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Por lo que a mayor área, la resistencia de un material es menor, por ello en instalaciones de alto voltaje se usan cableados gruesos, para evitar que puedan salir ardiendo. Y a mayor longitud, mayor resistencia. Este último factor, la longitud, lo hemos de tener en cuenta en el diseño de nuestros circuitos porque puede producir problemas.&lt;/p&gt;
+
+&lt;p&gt;Además, la temperatura es otro elemento que afecta a la resistencia. Por lo tanto, los factores que influyen el la resistencia de un material son:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Temperatura&lt;/li&gt;
+  &lt;li&gt;Resistividad&lt;/li&gt;
+  &lt;li&gt;Área&lt;/li&gt;
+  &lt;li&gt;Longitud&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Un sensor resistivo es aquel entonces que mide el cambio de la resistencia de un material, en el caso del sensor de humedad de suelo, el material será el propio suelo.
+Estos sensores se componen de dos sondas recubiertas de un metal conductor (electrodos) y miden la resistencia que ofrece el suelo, a mayor cantidad de agua, mayor cantidad de sales disueltas y menor resistencia.&lt;/p&gt;
+
+&lt;p&gt;Y a menor cantidad de agua, justo lo contrario. Es importante tener en cuenta que el agua destilada o de lluvia no conduce la electricidad, por ello es por lo que hablamos de sales disueltas.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-un-sensor-capacitivo&quot;&gt;¿Qué es un sensor capacitivo?&lt;/h2&gt;
+&lt;p&gt;Este tipo de sensores trabajan básicamente midiendo la los cambios en una propiedad eléctrica llamada capacitancia.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/2020-04-19-sensor-capacitivo-vs-resistivo/capacitive.jpg&quot; alt=&quot;Sensor de humedad capacitivo&quot; title=&quot;Sensor de humedad capacitivo para Arduino&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y podemos definir la &lt;strong&gt;capacitancia como la reacción que se produce en dos materiales conductores separados entre sí a muy poca distancia, al aplicarles una carga eléctrica&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Imaginemos dos placas de metal separadas entre sí por un centímetro.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cuando se les aplica un voltaje continuo, lo que sucede es que se crea un campo eléctrico que hace que los iones con carga positiva y con carga negativa se redistribuyan en ambas placas de forma ordenada, es decir, las cargas positivas en un lado y las negativas en otro.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cuando se les aplica un voltaje alterno, las cargas se mueven de una placa a otra generando una corriente eléctrica, por el propio movimiento de los iones con carga positiva y negativa. Esta corriente que se genera es la que mide el sensor.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La capacitancia está influida por tres factores:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Área&lt;/li&gt;
+  &lt;li&gt;Dieléctrico (es el material entre las placas conductoras)&lt;/li&gt;
+  &lt;li&gt;Distancia.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El dieléctrico por lo tanto, va a ser el suelo. Y además es lo único que va a cambiar de estado, el resto va a ser constante. De este modo se puede medir la humedad.&lt;/p&gt;
+
+&lt;p&gt;La corriente eléctrica que se produce al aplicar un voltaje alterno, varía dependiendo de la capacitancia del dieléctrico, el suelo. Por lo tanto, los sensores capacitivos miden la intensidad de la corriente que se produce y que varía en función del dieléctrico: la humedad del suelo.&lt;/p&gt;
+
+&lt;p&gt;Para protegerlo de las inclemencias del exterior, lluvia, humedad o polvo, podemos recubrir el circuito que expone con tubo termoretractil grueso, para así evitar que los componentes electrónicos expuestos se oxiden.&lt;/p&gt;
+
+&lt;h2 id=&quot;otros-tipos-de-sensores-de-humedad-de-alto-rendimiento&quot;&gt;Otros tipos de sensores de humedad de alto rendimiento&lt;/h2&gt;
+&lt;p&gt;Los sensores que he mostrado anteriormente no los podemos considerar profesionales, ni siquiera el capacitivo. Puesto que como veremos en el siguiente apartado presenta problemas, por lo que si queremos fiabilidad hemos de invertir más.&lt;/p&gt;
+
+&lt;p&gt;Alguno que podemos encontrar es el SHT-10, pero en otro post veremos este punto más en detalle.&lt;/p&gt;
+
+&lt;h2 id=&quot;ventajas-del-sensor-capacitivo-sobre-el-resistivo&quot;&gt;Ventajas del sensor capacitivo sobre el resistivo&lt;/h2&gt;
+&lt;p&gt;El sensor resistivo más conocido que nos podemos encontrar es el FC-28, que ronda un precio de varios euros, &lt;a href=&quot;http://rover.ebay.com/rover/1/1185-53479-19255-0/1?ff3=4&amp;amp;pub=5575581389&amp;amp;toolid=10001&amp;amp;campid=5338673600&amp;amp;customid=&amp;amp;mpre=https%3A%2F%2Fwww.ebay.es%2Fitm%2FModulo-Sensor-Humedad-Tierra-Agua-Suelo-Higrometro-Soil-Arduino-S0021%2F201957194747%3Fhash%3Ditem2f05963bfb%3Ag%3AQPIAAOSw8gVX-kCv&quot;&gt;este&lt;/a&gt; es el que yo compré. Para empezar nuestras andadas a un bajo coste es más que suficiente. Pero no nos va a servir para un proyecto en el campo, puesto que los componentes metálicos terminan oxidándose, modificando así la conductividad de los mismos y haciendo que las mediciones sean totalmente inexactas.&lt;/p&gt;
+
+&lt;p&gt;Así es como quedó después de un año de uso &lt;img src=&quot;assets/images/2020-04-19-sensor-capacitivo-vs-resistivo/resistive.jpg&quot; alt=&quot;Sensor de humedad resistivo oxidado. Arduino&quot; title=&quot;Sensor de humedad resistivo oxidado. Arduino&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, &lt;strong&gt;un sensor capacitivo no expone ningún material que pueda oxidarse con el contacto del suelo&lt;/strong&gt;, además tampoco va a hacer circular una carga eléctrica a través del suelo y de las raíces de nuestras plantas y cultivos. En otro post comentaré cómo las plantas se pueden ver afectadas por ello, aunque es insignificante.&lt;/p&gt;
+
+&lt;p&gt;Otra de las ventajas del sensor capacitivo es que va a trabajar mejor en suelo, esto es debido a que al secarse la tierra, se puede contraer haciendo que los electrodos no estén totalmente en contacto con la tierra y produciendo mediciones inexactas.&lt;/p&gt;
+
+&lt;p&gt;Aunque hay que decir que podemos encontrar sensores resistivos resistentes a la corrosión y fiables, como por ejemplo el SM150T.&lt;/p&gt;
+
+&lt;h2 id=&quot;elementos-a-tener-en-cuenta&quot;&gt;Elementos a tener en cuenta&lt;/h2&gt;
+&lt;p&gt;Tanto el sensor capacitivo como el resistivo van a necesitar estar bien fijados en el suelo. Al igual que ocurre con nuestras plantas al trasplantarlas, &lt;strong&gt;necesitamos que no quede ninguna bolsa de aire entre el sensor y el suelo&lt;/strong&gt;. Al menos, esta premisa es cierta para los sensores de bajo coste que podemos encontrar en el mercado. Si vamos hacia sensores profesionales, la cosa cambia.&lt;/p&gt;
+
+&lt;p&gt;¿Por qué es necesario? Si dejáramos un espacio entre el sensor y el suelo, corremos el riesgo de &lt;strong&gt;medir la humedad como si estuviéramos en el aire&lt;/strong&gt;. Al menos es la experiencia que he tenido con los sensores baratos.&lt;/p&gt;
+
+&lt;p&gt;En el caso del resistivo, la carga eléctrica no va a circular del mismo modo, por lo que la medición sería incorrecta.
+En el caso del capacitivo, el dieléctrico no va a ser el suelo, sino el aire, por lo que, de nuevo, la medición va a ser incorrecta.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+&lt;p&gt;Para proyectos que no sean industriales, si necesitas aprender y tienes poco presupuesto, te recomendaría un sensor resistivo. Pero &lt;strong&gt;si, por el contrario, quieres hacer algo que tenga que sobrevivir en el campo, te recomiendo un sensor capacitivo o bien invertir en un sensor industrial.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hemos visto que, tanto el sensor capacitivo, como el resistivo pueden perfectamente ser usados con alta fiabilidad, en proyectos de agricultura. Simplemente hay que encontrar el fabricante y producto que mejor se adapte, por lo que deducimos que el uso de una tecnología u otra no es, a priori, 100% determinante.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>El taller del huerto</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="tecnologia" />
+      
+
+      
+        <summary type="html">Por qué un sensor de humedad capacitivo es generalmente mejor opción que uno resistivo para nuestros proyectos.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Construir una lámpara vintage usando restos de poda</title>

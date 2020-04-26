@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/tag/tecnologia/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-19T12:59:47+02:00</updated>
+  <updated>2020-04-26T17:02:09+02:00</updated>
   <id>https://eltallerdelhuerto.com/tag/tecnologia/feed.xml</id>
 
   
@@ -30,6 +30,84 @@
   
   
 
+  
+    <entry>
+      <title type="html">Arduno Nano funcionando a 3.3V y 16Mhz</title>
+      <link href="https://eltallerdelhuerto.com/arduino-nano-ttl-3v" rel="alternate" type="text/html" title="Arduno Nano funcionando a 3.3V y 16Mhz" />
+      <published>2020-04-26T12:00:00+02:00</published>
+      <updated>2020-04-26T12:00:00+02:00</updated>
+      <id>https://eltallerdelhuerto.com/arduino-nano-ttl-3v</id>
+      <content type="html" xml:base="https://eltallerdelhuerto.com/arduino-nano-ttl-3v">&lt;p&gt;Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 3.3V y optimizar su uso.&lt;/p&gt;
+
+&lt;p&gt;En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente.&lt;/p&gt;
+
+&lt;h2 id=&quot;problema&quot;&gt;Problema&lt;/h2&gt;
+&lt;p&gt;Al trabajar con el módulo SIM800L para la comunicación GPRS hemos de tener en cuenta que el nivel lógico de este módulo es 3.3V. Por lo que la línea de 5v de Arduino Nano no nos va a valer.&lt;/p&gt;
+
+&lt;p&gt;El módulo SIM800 va a funcionar a 5v (siempre que haya una batería propia para SIM800L, que veremos en otro post), pero &lt;strong&gt;vamos a quemar nuestro módulo GSM al usar el canal RX a 5v provenientes de Arduino.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Además si queremos usar una cómoda batería de litio 18650 o LiPo de 3,7V para alimentar Arduino, mantener un step-up es muy costoso, y vamos a tener que cargarla cada poco tiempo. Esto es debido a que el step-up va a pedir a la batería en todo momento, aunque tengamos nuestro Arduino en modo sleep.&lt;/p&gt;
+
+&lt;p&gt;No recomiendo nada su uso, por experiencia.&lt;/p&gt;
+
+&lt;p&gt;Y por experiencia también, he quemado un par de módulos al trabajar con 5v a nivel lógico, cuando en sus specs exponía que había que usarlos a 3.3V. Y esto ha sido por el USB, al cargar los sketch y alimentarlo posteriormente para las pruebas conectado y comunicándose.&lt;/p&gt;
+
+&lt;h2 id=&quot;solución&quot;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;Para evitar este problema, podemos hacer algo muy simple, &lt;strong&gt;eliminar el diodo que conecta la línea de 5v del USB a nuestro Arduino Nano&lt;/strong&gt;. De este modo, vamos a poder controlar qué voltaje le aplicamos, en mi caso 3.7v provenientes de una batería de litio 18650.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg&quot; alt=&quot;Arduino Nano antes con el diodo que conecta la linea de 5v del USB conectado&quot; title=&quot;Arduino Nano antes con el diodo que conecta la linea de 5v del USB conectado&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mira el círculo negro que hay en la imagen de arriba, ese es el diodo que vamos a remover.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-after.jpeg&quot; alt=&quot;Arduino Nano después con el diodo que conecta la linea de 5v del USB eliminado&quot; title=&quot;Arduino Nano después con el diodo que conecta la linea de 5v del USB eliminado&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;De nuevo, mira el círculo negro donde se ve como el diodo ha sido eliminado.&lt;/p&gt;
+
+&lt;p&gt;Otra opción es añadir un divisor de voltaje o conversor lógico entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
+Pero en ambos casos, vamos a tener el problema de que si alimentamos Arduino a 3.7v y hacemos un cambio lógico a 3.3v, suponiendo que el cambio lo hacemos desde 5v el voltaje resultante no será 3.3v sino menos, por lo que &lt;strong&gt;el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Es decir, 5v a 3.3v, la diferencia es 1.7v. Pero 3.7v - 1.7 son 2v.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Recordemos. Si realizamos este cambio, tenemos que alimentar Arduino mientras lo tenemos conectado a USB para que funcione&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;un-poco-fuera-de-especificación&quot;&gt;Un poco fuera de especificación&lt;/h2&gt;
+
+&lt;p&gt;Cuando digo que estamos fuera de la especificación me refiero a que el módulo Arduino Nano va a trabajar a 18Mhz con un voltaje de 3,7v cuando debería de ser un voltaje de 5v.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pero en la práctica funciona relativamente bien y es algo sencillo de hacer.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Aunque normalmente para trabajar a esos voltajes se suele usar una frecuencia más baja, 8Mhz.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;La mejor solución para optimizar las baterías de 3.7v es comprar una placa de desarrollo Arduino que trabaje con el oscilador a 8Mhz.&lt;/strong&gt; De este modo, la línea de corriente de 5v del USB va a ser convertida a 3.3v y vamos a trabajar a unas frecuencias más bajas y más fiables. Esto es debido a que normalmente a 8Mhz, el voltaje que se necesita es de 3.3v.&lt;/p&gt;
+
+&lt;p&gt;Algunos Arduino de bajo coste que trabajan a 3.3v son los Arduino Pro mini a 8Mhz y 3.3v.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>El taller del huerto</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="tecnologia" />
+      
+
+      
+        <summary type="html">Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 3.3V y optimizar su uso.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Sensor de humedad capacitivo vs resistivo</title>
@@ -239,7 +317,7 @@ En el caso del capacitivo, el dieléctrico no va a ser el suelo, sino el aire, p
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;vamos-con-un-ejemplo&quot;&gt;¡Vamos con un ejemplo!&lt;/h2&gt;
-&lt;p&gt;Vamos a construir un pequeño circuito que será la base para poder entender de qué estamos hablando. Lo primero que tendrás que hacer es ir a https://www.circuito.io/app. Circuito.io es una app muy intuitiva y que nos permitirá aprender cómo quedaría nuestro diseño sin necesidad de gastar dinero en hardware y ver los resultados. La verdad que es que está muy bien.&lt;/p&gt;
+&lt;p&gt;Vamos a construir un pequeño circuito que será la base para poder entender de qué estamos hablando. Lo primero que tendrás que hacer es ir a &lt;a href=&quot;https://www.circuito.io/app&quot;&gt;Circuito.io&lt;/a&gt; es una app muy intuitiva y que nos permitirá aprender cómo quedaría nuestro diseño sin necesidad de gastar dinero en hardware y ver los resultados. La verdad que es que está muy bien.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Inicialmente aparecerá el Arduino Uno la mesa de trabajo&lt;/li&gt;

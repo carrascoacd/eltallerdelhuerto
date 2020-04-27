@@ -200,14 +200,14 @@ into the {body} of the default.hbs template -->
 <p>De nuevo, mira el círculo negro donde se ve como el diodo ha sido eliminado.</p>
 
 <p>Otra opción es añadir un divisor de voltaje entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
-Pero en cualquier caso, vamos a tener el problema de que si alimentamos Arduino a 3.7v y hacemos un cambio lógico a 3.3v, suponiendo que el cambio lo hacemos desde 5v el voltaje resultante no será 3.3v sino menos, por lo que <strong>el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.</strong></p>
+Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.</strong></p>
 
 <p>Es decir, 5v -&gt; 3.3v, la diferencia es 1.7v. Pero 3.7v - 1.7 son 2v. Y 2v no es detectado como nivel lógico alto (1) por algunos componentes, como es el caso del SIM800L.</p>
 
 <p><strong>Recordemos. Si realizamos este cambio, tenemos que alimentar Arduino mientras lo tenemos conectado a USB para que funcione</strong>.</p>
 <h2 id="un-poco-fuera-de-especificación">Un poco fuera de especificación</h2>
 
-<p>Cuando digo que estamos fuera de la especificación me refiero a que el módulo Arduino Nano va a trabajar a 18Mhz con un voltaje de 3,7v cuando debería de ser un voltaje de 5v.</p>
+<p>Cuando digo que estamos fuera de la especificación me refiero a que el módulo Arduino Nano va a trabajar a 18Mhz con un voltaje de 3.3v cuando debería de ser un voltaje de 5v. Un voltaje de 3.3V permite una frecuencia máxima de reloj de 10Mhz, aunque en la práctica funciona, ya que con una batería de 3.7v nos encontraríamos al límite, pero dentro.</p>
 
 <p><strong>Pero en la práctica funciona relativamente bien y es algo sencillo de hacer.</strong></p>
 
@@ -304,6 +304,8 @@ Pero en cualquier caso, vamos a tener el problema de que si alimentamos Arduino 
                                 
                                 
                                   
+                                
+                                  
                                     
                                   
                                 
@@ -350,6 +352,55 @@ Pero en cualquier caso, vamos a tener el problema de que si alimentamos Arduino 
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/conexiones-entre-los-arboles-sistemas-distribuidos">
+                <div class="post-card-image" style="background-image: url(/assets/images/2020-05-01-conexiones-entre-los-arboles-sistemas-distribuidos.cover)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/conexiones-entre-los-arboles-sistemas-distribuidos">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Plantas</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Los bosques. Conexiones entre las raíces de los árboles y sistemas distribuidos.</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/icon-rounded.png" alt="El taller del huerto" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/eltallerdelhuerto/">El taller del huerto</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
             
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->

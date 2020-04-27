@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/tag/tecnologia/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-27T08:34:49+02:00</updated>
+  <updated>2020-04-27T22:34:08+02:00</updated>
   <id>https://eltallerdelhuerto.com/tag/tecnologia/feed.xml</id>
 
   
@@ -64,14 +64,14 @@
 &lt;p&gt;De nuevo, mira el círculo negro donde se ve como el diodo ha sido eliminado.&lt;/p&gt;
 
 &lt;p&gt;Otra opción es añadir un divisor de voltaje entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
-Pero en cualquier caso, vamos a tener el problema de que si alimentamos Arduino a 3.7v y hacemos un cambio lógico a 3.3v, suponiendo que el cambio lo hacemos desde 5v el voltaje resultante no será 3.3v sino menos, por lo que &lt;strong&gt;el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.&lt;/strong&gt;&lt;/p&gt;
+Pero en cualquier caso, vamos a tener el problema de que &lt;strong&gt;el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Es decir, 5v -&amp;gt; 3.3v, la diferencia es 1.7v. Pero 3.7v - 1.7 son 2v. Y 2v no es detectado como nivel lógico alto (1) por algunos componentes, como es el caso del SIM800L.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Recordemos. Si realizamos este cambio, tenemos que alimentar Arduino mientras lo tenemos conectado a USB para que funcione&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;un-poco-fuera-de-especificación&quot;&gt;Un poco fuera de especificación&lt;/h2&gt;
 
-&lt;p&gt;Cuando digo que estamos fuera de la especificación me refiero a que el módulo Arduino Nano va a trabajar a 18Mhz con un voltaje de 3,7v cuando debería de ser un voltaje de 5v.&lt;/p&gt;
+&lt;p&gt;Cuando digo que estamos fuera de la especificación me refiero a que el módulo Arduino Nano va a trabajar a 18Mhz con un voltaje de 3.3v cuando debería de ser un voltaje de 5v. Un voltaje de 3.3V permite una frecuencia máxima de reloj de 10Mhz, aunque en la práctica funciona, ya que con una batería de 3.7v nos encontraríamos al límite, pero dentro.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Pero en la práctica funciona relativamente bien y es algo sencillo de hacer.&lt;/strong&gt;&lt;/p&gt;
 
@@ -188,7 +188,7 @@ Estos sensores se componen de dos sondas recubiertas de un metal conductor (elec
 &lt;p&gt;Alguno que podemos encontrar es el SHT-10, pero en otro post veremos este punto más en detalle.&lt;/p&gt;
 
 &lt;h2 id=&quot;ventajas-del-sensor-capacitivo-sobre-el-resistivo&quot;&gt;Ventajas del sensor capacitivo sobre el resistivo&lt;/h2&gt;
-&lt;p&gt;El sensor resistivo más conocido que nos podemos encontrar es el FC-28, que ronda un precio de varios euros, &lt;a href=&quot;http://rover.ebay.com/rover/1/1185-53479-19255-0/1?ff3=4&amp;amp;pub=5575581389&amp;amp;toolid=10001&amp;amp;campid=5338673600&amp;amp;customid=&amp;amp;mpre=https%3A%2F%2Fwww.ebay.es%2Fitm%2FModulo-Sensor-Humedad-Tierra-Agua-Suelo-Higrometro-Soil-Arduino-S0021%2F201957194747%3Fhash%3Ditem2f05963bfb%3Ag%3AQPIAAOSw8gVX-kCv&quot;&gt;este&lt;/a&gt; es el que yo compré. Para empezar nuestras andadas a un bajo coste es más que suficiente. Pero no nos va a servir para un proyecto en el campo, puesto que los componentes metálicos terminan oxidándose, modificando así la conductividad de los mismos y haciendo que las mediciones sean totalmente inexactas.&lt;/p&gt;
+&lt;p&gt;El sensor resistivo más conocido que nos podemos encontrar es el FC-28, que ronda un precio de varios euros, &lt;a href=&quot;http://rover.ebay.com/rover/1/1185-53479-19255-0/1?ff3=4&amp;amp;pub=5575581389&amp;amp;toolid=10001&amp;amp;campid=5338673600&amp;amp;customid=&amp;amp;mpre=https%3A%2F%2Fwww.ebay.es%2Fitm%2FModulo-Sensor-Humedad-Tierra-Agua-Suelo-Higrometro-Soil-Arduino-S0021%2F201957194747%3Fhash%3Ditem2f05963bfb%3Ag%3AQPIAAOSw8gVX-kCv&quot; target=&quot;_blank&quot;&gt;este&lt;/a&gt; es el que yo compré. Para empezar nuestras andadas a un bajo coste es más que suficiente. Pero no nos va a servir para un proyecto en el campo, puesto que los componentes metálicos terminan oxidándose, modificando así la conductividad de los mismos y haciendo que las mediciones sean totalmente inexactas.&lt;/p&gt;
 
 &lt;p&gt;Así es como quedó después de un año de uso &lt;img src=&quot;assets/images/2020-04-19-sensor-capacitivo-vs-resistivo/resistive.jpg&quot; alt=&quot;Sensor de humedad resistivo oxidado. Arduino&quot; title=&quot;Sensor de humedad resistivo oxidado. Arduino&quot; /&gt;&lt;/p&gt;
 

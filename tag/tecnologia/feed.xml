@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/tag/tecnologia/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-26T17:02:09+02:00</updated>
+  <updated>2020-04-27T08:34:49+02:00</updated>
   <id>https://eltallerdelhuerto.com/tag/tecnologia/feed.xml</id>
 
   
@@ -63,10 +63,10 @@
 
 &lt;p&gt;De nuevo, mira el círculo negro donde se ve como el diodo ha sido eliminado.&lt;/p&gt;
 
-&lt;p&gt;Otra opción es añadir un divisor de voltaje o conversor lógico entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
-Pero en ambos casos, vamos a tener el problema de que si alimentamos Arduino a 3.7v y hacemos un cambio lógico a 3.3v, suponiendo que el cambio lo hacemos desde 5v el voltaje resultante no será 3.3v sino menos, por lo que &lt;strong&gt;el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Otra opción es añadir un divisor de voltaje entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
+Pero en cualquier caso, vamos a tener el problema de que si alimentamos Arduino a 3.7v y hacemos un cambio lógico a 3.3v, suponiendo que el cambio lo hacemos desde 5v el voltaje resultante no será 3.3v sino menos, por lo que &lt;strong&gt;el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Es decir, 5v a 3.3v, la diferencia es 1.7v. Pero 3.7v - 1.7 son 2v.&lt;/p&gt;
+&lt;p&gt;Es decir, 5v -&amp;gt; 3.3v, la diferencia es 1.7v. Pero 3.7v - 1.7 son 2v. Y 2v no es detectado como nivel lógico alto (1) por algunos componentes, como es el caso del SIM800L.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Recordemos. Si realizamos este cambio, tenemos que alimentar Arduino mientras lo tenemos conectado a USB para que funcione&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;un-poco-fuera-de-especificación&quot;&gt;Un poco fuera de especificación&lt;/h2&gt;

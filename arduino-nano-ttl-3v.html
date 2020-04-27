@@ -199,10 +199,10 @@ into the {body} of the default.hbs template -->
 
 <p>De nuevo, mira el círculo negro donde se ve como el diodo ha sido eliminado.</p>
 
-<p>Otra opción es añadir un divisor de voltaje o conversor lógico entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
-Pero en ambos casos, vamos a tener el problema de que si alimentamos Arduino a 3.7v y hacemos un cambio lógico a 3.3v, suponiendo que el cambio lo hacemos desde 5v el voltaje resultante no será 3.3v sino menos, por lo que <strong>el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.</strong></p>
+<p>Otra opción es añadir un divisor de voltaje entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
+Pero en cualquier caso, vamos a tener el problema de que si alimentamos Arduino a 3.7v y hacemos un cambio lógico a 3.3v, suponiendo que el cambio lo hacemos desde 5v el voltaje resultante no será 3.3v sino menos, por lo que <strong>el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.</strong></p>
 
-<p>Es decir, 5v a 3.3v, la diferencia es 1.7v. Pero 3.7v - 1.7 son 2v.</p>
+<p>Es decir, 5v -&gt; 3.3v, la diferencia es 1.7v. Pero 3.7v - 1.7 son 2v. Y 2v no es detectado como nivel lógico alto (1) por algunos componentes, como es el caso del SIM800L.</p>
 
 <p><strong>Recordemos. Si realizamos este cambio, tenemos que alimentar Arduino mientras lo tenemos conectado a USB para que funcione</strong>.</p>
 <h2 id="un-poco-fuera-de-especificación">Un poco fuera de especificación</h2>

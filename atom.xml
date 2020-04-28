@@ -23,9 +23,9 @@
     
       
       <item>
-        <title>Arduno Nano funcionando a 3.3V y 16Mhz</title>
+        <title>Arduno Nano funcionando a 3.7V y 16Mhz</title>
         
-          <description>&lt;p&gt;Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 3.3V y optimizar su uso.&lt;/p&gt;
+          <description>&lt;p&gt;Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso.&lt;/p&gt;
 
 </description>
         

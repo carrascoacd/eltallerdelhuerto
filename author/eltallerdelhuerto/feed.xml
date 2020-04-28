@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-28T08:37:37+02:00</updated>
+  <updated>2020-04-28T09:01:36+02:00</updated>
   <id>https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml</id>
 
   
@@ -46,7 +46,7 @@
 
 &lt;p&gt;El módulo SIM800 va a funcionar a 5v (siempre que haya una batería propia para SIM800L, que veremos en otro post), pero &lt;strong&gt;vamos a quemar nuestro módulo GSM al usar el canal RX o Reset a 5v provenientes de Arduino.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Además si queremos usar una cómoda batería de litio 18650 o LiPo de 3.7V para alimentar Arduino, mantener un step-up para tener un voltaje constante de 5v es muy costoso, y vamos a tener que cargarla cada poco tiempo. Esto es debido a que el step-up va a pedir a la batería más en todo momento, aunque tengamos nuestro Arduino en modo sleep.&lt;/p&gt;
+&lt;p&gt;Además, si queremos usar una cómoda batería de litio 18650 o LiPo de 3.7V para alimentar Arduino, mantener un step-up para tener un voltaje constante de 5v es muy costoso, y vamos a tener que cargarla cada poco tiempo. Esto es debido a que el step-up va a pedir a la batería más en todo momento, aunque tengamos nuestro Arduino en modo sleep.&lt;/p&gt;
 
 &lt;p&gt;No recomiendo nada su uso, por experiencia, ya que en cuestión de horas podemos agotar la batería dejando nuestro proyecto muerto.&lt;/p&gt;
 
@@ -66,11 +66,11 @@
 &lt;p&gt;Otra opción es añadir un divisor de voltaje entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
 Pero en cualquier caso, vamos a tener el problema de que &lt;strong&gt;el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Es decir, la diferencia de 5v a 3.3v es 1.7v. Pero 3.7v el resultado la diferencia de ese mismo divisor de voltaje aplicado a 3.7v son 2v. Y 2v no es detectado como nivel lógico alto (1) por algunos componentes, como es el caso del SIM800L por lo que no va a funcionar.&lt;/p&gt;
+&lt;p&gt;Es decir al aplicar un divisor de voltaje para llegar de 5 a 3v tenemos que la diferencia de 5v a 3.3v es 1.7v. Pero el resultado la diferencia de ese mismo divisor de voltaje aplicado a 3.7v son 2v. Y 2v no es detectado como nivel lógico alto (1) por algunos componentes, como es el caso del SIM800L por lo que no va a funcionar.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Por lo que añadiendo un divisor de voltaje al puerto de serie haremos que los módulos con lógica 3.3v dejen de funcionar cuando desconectemos el USB&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Por lo que añadiendo un divisor de voltaje al puerto de serie haremos que los módulos con lógica 3.3v dejen de funcionar cuando desconectemos el USB y lo alimentemos con una batería de 3.7v&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Algo importante. Si realizamos este cambio y eliminamos el diodo, tenemos que alimentar Arduino mientras lo tenemos conectado a USB para que funcione, ya que la línea de corriente de 5v estaría eliminada.&lt;/p&gt;
+&lt;p&gt;Por lo que si realizamos este cambio y eliminamos el diodo, tenemos que alimentar Arduino mientras lo tenemos conectado al USB para que funcione, ya que la línea de corriente de 5v estaría eliminada.&lt;/p&gt;
 
 &lt;h2 id=&quot;un-poco-fuera-de-especificación&quot;&gt;Un poco fuera de especificación&lt;/h2&gt;
 

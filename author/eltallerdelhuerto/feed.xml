@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-04-28T09:01:36+02:00</updated>
+  <updated>2020-04-28T09:26:53+02:00</updated>
   <id>https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml</id>
 
   
@@ -104,65 +104,6 @@ Pero en cualquier caso, vamos a tener el problema de que &lt;strong&gt;el módul
 
       
         <summary type="html">Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Los bosques. Conexiones entre las raíces de los árboles y sistemas distribuidos.</title>
-      <link href="https://eltallerdelhuerto.com/conexiones-entre-los-arboles-sistemas-distribuidos" rel="alternate" type="text/html" title="Los bosques. Conexiones entre las raíces de los árboles y sistemas distribuidos." />
-      <published>2020-04-26T12:00:00+02:00</published>
-      <updated>2020-04-26T12:00:00+02:00</updated>
-      <id>https://eltallerdelhuerto.com/conexiones-entre-los-arboles-sistemas-distribuidos</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/conexiones-entre-los-arboles-sistemas-distribuidos">&lt;p&gt;Las raíces de los árboles son capaces de conectarse entre sí. Es decir, un árbol puede conectar sus raíces con árboles de su misma especie. De esta forma construyen un organismo similar a un hormiguero, intercambiándose nutrientes y haciendo del mismo uno más fuerte y resistente.&lt;/p&gt;
-
-&lt;h2 id=&quot;los-bosques&quot;&gt;Los bosques&lt;/h2&gt;
-
-&lt;p&gt;Al leer este libro me paré a pensar cada vez que veía un árbol solitario. Un árbol solitario no es capaz de filtrar la luz del sol y se seca antes, tampoco es capaz de sobrevivir a las plagas con tanta soltura como si otros árboles le proporcionaran nutrientes a través de las raíces.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Dentro de un bosque se crea un micro clima&lt;/strong&gt; debido a los árboles protegiendo las ráfagas del viento y transpirando por cada hoja, por ello al entrar en un bosque en verano, la temperatura es más baja, la humedad más alta y la sensación es totalmente diferente que fuera, sobre todo en jornadas de intensas olas de calor.&lt;/p&gt;
-
-&lt;h2 id=&quot;los-bosques-se-comportan-como-sociedades-humanas&quot;&gt;Los bosques se comportan como sociedades humanas&lt;/h2&gt;
-&lt;p&gt;Esto se puede asemejar a las sociedades actuales y a las redes distribuidas, por ejemplo Internet. Una persona por si sola antiguamente podía sobrevivir, pero no es hasta que se forman las sociedades cuando se produce la evolución que nos ha permitido ser quienes somos hoy end día.&lt;/p&gt;
-
-&lt;p&gt;Cada elemento de la sociedad desenvuelve una función específica y aporta y ayuda al resto de la sociedad, lo mismo sucede con &lt;strong&gt;las sociedades de los árboles: los bosques&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;los-bosques-se-asemejan-a-sistemas-distribuidos&quot;&gt;Los bosques se asemejan a sistemas distribuidos&lt;/h2&gt;
-
-&lt;p&gt;Al ser ingeniero informático rápidamente me he dado cuenta de que las redes distribuidas de los árboles son muy semejantes a las que conforman nuestros sistemas tecnológicos hoy en día.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Un sistema distribuido hace que sea tolerante a fallos por definición&lt;/strong&gt; ya que si una máquina en un sistema distribuido se estropea, otras pueden cubrir su lugar, esto es lo que denominamos tolerancia a fallos. El sistema se adapta y conjunto sigue funcionando.&lt;/p&gt;
-
-&lt;p&gt;Además, en un sistema distribuido la carga se reparte entre cada máquina normalmente, ayudando así al resto.  &lt;strong&gt;En los bosques sucede lo mismo, cuando un árbol está enfermo, el resto es capaz de proporcionarle nutrientes a través de las raíces y ayudarlo.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusiones&quot;&gt;Conclusiones&lt;/h2&gt;
-
-&lt;p&gt;Si hay un libro que me haya desvelado conceptos para mi ocultos hasta ese día, ese ha sido &lt;a href=&quot;https://amzn.to/2VFFR6r&quot; target=&quot;_blank&quot;&gt;La vida secreta de los árboles&lt;/a&gt; de Peter Wohlleben y en este post he intentado comparar las sociedades y los sistemas distribuidos con los bosques.&lt;/p&gt;
-
-&lt;p&gt;En otro post hablaré más de ello, pero aún tenemos mucho que aprender de cómo funcionan las plantas, tenemos que aprenderlo para poder modelar mejores sistemas que ayuden a que nuestra sociedad sea más respetuosa y eficiente.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>El taller del huerto</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="plantas" />
-      
-
-      
-        <summary type="html">Las raíces de los árboles son capaces de conectarse entre sí. Es decir, un árbol puede conectar sus raíces con árboles de su misma especie. De esta forma construyen un organismo similar a un hormiguero, intercambiándose nutrientes y haciendo del mismo uno más fuerte y resistente.</summary>
       
 
       

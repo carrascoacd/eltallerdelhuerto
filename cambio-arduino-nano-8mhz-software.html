@@ -11,7 +11,7 @@
 
 
 
-    <title>Arduno Nano funcionando a 3.7V y 16Mhz</title>
+    <title>Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -30,26 +30,26 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="canonical" href="https://eltallerdelhuerto.com/arduino-nano-ttl-3v" />
+    <link rel="canonical" href="https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="El taller del huerto" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Arduno Nano funcionando a 3.7V y 16Mhz" />
-    <meta property="og:description" content="Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso. En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente. Problema Al" />
-    <meta property="og:url" content="https://eltallerdelhuerto.com/arduino-nano-ttl-3v" />
-    <meta property="og:image" content="https://eltallerdelhuerto.com/assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg" />
+    <meta property="og:title" content="Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software" />
+    <meta property="og:description" content="Vamos a ver cómo modificar la frecuencia de reloj de la CPU de nuestro Arduino a través del software. Cuando hablamos de uso de sistemas IoT en el campo, la batería es algo muy importante ya que no siempre vamos a poder cargarla, es por ello que es crucial prestar" />
+    <meta property="og:url" content="https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software" />
+    <meta property="og:image" content="https://eltallerdelhuerto.com/assets/images/2020-05-04-cambio-arduino-nano-8mhz-software/cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2020-04-27T12:00:00+02:00" />
-    <meta property="article:modified_time" content="2020-04-27T12:00:00+02:00" />
+    <meta property="article:published_time" content="2020-05-04T12:00:00+02:00" />
+    <meta property="article:modified_time" content="2020-05-04T12:00:00+02:00" />
     <meta property="article:tag" content="Tecnologia" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Arduno Nano funcionando a 3.7V y 16Mhz" />
-    <meta name="twitter:description" content="Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso. En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente. Problema Al" />
+    <meta name="twitter:title" content="Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software" />
+    <meta name="twitter:description" content="Vamos a ver cómo modificar la frecuencia de reloj de la CPU de nuestro Arduino a través del software. Cuando hablamos de uso de sistemas IoT en el campo, la batería es algo muy importante ya que no siempre vamos a poder cargarla, es por ello que es crucial prestar" />
     <meta name="twitter:url" content="https://eltallerdelhuerto.com/" />
-    <meta name="twitter:image" content="https://eltallerdelhuerto.com/assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg" />
+    <meta name="twitter:image" content="https://eltallerdelhuerto.com/assets/images/2020-05-04-cambio-arduino-nano-8mhz-software/cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="El taller del huerto" />
     <meta name="twitter:label2" content="Filed under" />
@@ -68,18 +68,18 @@
         "name": "El taller del huerto",
         "logo": "https://eltallerdelhuerto.com/assets/images/icon-rounded.png"
     },
-    "url": "https://eltallerdelhuerto.com/arduino-nano-ttl-3v",
+    "url": "https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software",
     "image": {
         "@type": "ImageObject",
-        "url": "https://eltallerdelhuerto.com/assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg",
+        "url": "https://eltallerdelhuerto.com/assets/images/2020-05-04-cambio-arduino-nano-8mhz-software/cover.jpg",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://eltallerdelhuerto.com/arduino-nano-ttl-3v"
+        "@id": "https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software"
     },
-    "description": "Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso. En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente. Problema Al"
+    "description": "Vamos a ver cómo modificar la frecuencia de reloj de la CPU de nuestro Arduino a través del software. Cuando hablamos de uso de sistemas IoT en el campo, la batería es algo muy importante ya que no siempre vamos a poder cargarla, es por ello que es crucial prestar"
 }
     </script>
 
@@ -92,7 +92,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Arduno Nano funcionando a 3.7V y 16Mhz" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software" href="/feed.xml" />
 
 
     <!-- Cookie consent related things -->
@@ -153,7 +153,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="27 April 2020">27 April 2020</time>
+                    <time class="post-full-meta-date" datetime=" 4 May 2020"> 4 May 2020</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -163,62 +163,167 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">Arduno Nano funcionando a 3.7V y 16Mhz</h1>
+                <h1 class="post-full-title">Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</h1>
             </header>
 
             
-            <figure class="post-full-image" style="background-image: url(/assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg)">
+            <figure class="post-full-image" style="background-image: url(/assets/images/2020-05-04-cambio-arduino-nano-8mhz-software/cover.jpg)">
             </figure>
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso.</p>
+                    <p>Vamos a ver cómo modificar la frecuencia de reloj de la CPU de nuestro Arduino a través del software.</p>
 
-<p>En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente.</p>
+<p>Cuando hablamos de uso de sistemas IoT en el campo, la batería es algo muy importante ya que no siempre vamos a poder cargarla, es por ello que es crucial prestar atención a este punto. Si queremos optimizar nuestra batería para poder usar nuestra estación de control basada en Arduino de forma que no tengamos que preocuparnos, puedes seguir leyendo.</p>
 
 <h2 id="problema">Problema</h2>
-<p>Al trabajar con el módulo SIM800L para la comunicación GPRS hemos de tener en cuenta que el nivel lógico de este módulo es 3.3V. Por lo que la línea lógica de 5v de Arduino Nano no nos va a valer.</p>
-
-<p>El módulo SIM800 va a funcionar a 5v (siempre que haya una batería propia para SIM800L, que veremos en otro post), pero <strong>vamos a quemar nuestro módulo GSM al usar el canal RX o Reset a 5v provenientes de Arduino.</strong></p>
-
-<p>Además, si queremos usar una cómoda batería de litio 18650 o LiPo de 3.7V para alimentar Arduino, mantener un step-up para tener un voltaje constante de 5v es muy costoso, y vamos a tener que cargarla cada poco tiempo. Esto es debido a que el step-up va a pedir a la batería más en todo momento, aunque tengamos nuestro Arduino en modo sleep.</p>
-
-<p>No recomiendo nada su uso, por experiencia, ya que en cuestión de horas podemos agotar la batería dejando nuestro proyecto muerto.</p>
-
-<p>Y por experiencia también, he quemado un par de módulos al trabajar con 5v a nivel lógico, cuando en sus specs exponía que había que usarlos a 3.3V. Y esto ha sido por el USB, al cargar los sketch y alimentarlo posteriormente para las pruebas conectado y comunicándose. Recordemos que el USB envía 5v.</p>
+<p>Cuando queremos alimentar nuestro Arduino y tenemos uno que funciona a 5v, hemos de elegir batería y no hay muchas opciones que nos permitan usar una única batería sin step-up para llegar a 5v. Usar una batería tiene la ventaja de que si usamos un cargador solar, el diseño es mucho más simple, más reducido, en general son todo ventajas cuando hablamos del campo.</p>
 
 <h2 id="solución">Solución</h2>
-<p>Para evitar este problema, podemos hacer algo muy simple, <strong>eliminar el diodo que conecta la línea de 5v del USB a nuestro Arduino Nano</strong>. De este modo, vamos a poder controlar qué voltaje le aplicamos, en mi caso 3.7v provenientes de una batería de litio 18650.</p>
+<p>La solución, o una de las soluciones es usar una batería a 3.7v y disminuir la frecuencia de la CPU de Arduino. Aunque con un Arduino a 5v podemos funcionar en la práctica con una batería de 3.7v, podemos tener problemas al estar un poco al límite de la especificación.</p>
 
-<p><img src="assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg" alt="Arduino Nano antes con el diodo que conecta la linea de 5v del USB conectado" title="Arduino Nano antes con el diodo que conecta la linea de 5v del USB conectado" /></p>
+<p>Arduino monta normalmente un microcontrolador ATMega356 y para hacer el campo podemos de dos maneras, a través de hardware cambiando el oscilador externo por uno con menos frecuenca o bien mediante software como vamos a ver a continuación.</p>
 
-<p>Mira el círculo negro que hay en la imagen de arriba, ese es el diodo que vamos a remover.</p>
+<p>Para cambiar la frecuencia operativa de nuestro Arduino a través de software hemos de cambiar el factor de división del CLKPR, el registro de escalado del reloj. Inicialmente este registro contendrá el valor 0, lo que nos dará una frecuencia de 16Mhz. Podemos verlo en la siguiente tabla:</p>
 
-<p><img src="assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-after.jpeg" alt="Arduino Nano después con el diodo que conecta la linea de 5v del USB eliminado" title="Arduino Nano después con el diodo que conecta la linea de 5v del USB eliminado" /></p>
+<table>
+<tbody>
+<tr>
+<th>Valor CLKPR</th>
+<th>Factor de división</th>
+<th>Frecuencia</th>
+<th>Parámetro de clock_prescale_set()</th>
+</tr>
 
-<p>De nuevo, mira el círculo negro donde se ve como el diodo ha sido eliminado.</p>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>16000000</td>
+<td>clock_div_1</td>
+</tr>
 
-<p>Otra opción es añadir un divisor de voltaje entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
-Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.</strong></p>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>8000000</td>
+<td>clock_div_2</td>
+</tr>
 
-<p>Es decir al aplicar un divisor de voltaje para llegar de 5 a 3v tenemos que la diferencia de 5v a 3.3v es 1.7v. Pero el resultado la diferencia de ese mismo divisor de voltaje aplicado a 3.7v son 2v. Y 2v no es detectado como nivel lógico alto (1) por algunos componentes, como es el caso del SIM800L por lo que no va a funcionar.</p>
+<tr>
+<td>2</td>
+<td>4</td>
+<td>4000000</td>
+<td>clock_div_4</td>
+</tr>
 
-<p><strong>Por lo que añadiendo un divisor de voltaje al puerto de serie haremos que los módulos con lógica 3.3v dejen de funcionar cuando desconectemos el USB y lo alimentemos con una batería de 3.7v</strong>.</p>
+<tr>
+<td>3</td>
+<td>8</td>
+<td>2000000</td>
+<td>clock_div_8</td>
+</tr>
 
-<p>Por lo que si realizamos este cambio y eliminamos el diodo, tenemos que alimentar Arduino mientras lo tenemos conectado al USB para que funcione, ya que la línea de corriente de 5v estaría eliminada.</p>
+<tr>
+<td>4</td>
+<td>16</td>
+<td>1000000</td>
+<td>clock_div_16</td>
+</tr>
 
-<h2 id="un-poco-fuera-de-especificación">Un poco fuera de especificación</h2>
+<tr>
+<td>5</td>
+<td>32</td>
+<td>500000</td>
+<td>clock_div_32</td>
+</tr>
 
-<p>Cuando digo que estamos fuera de la especificación me refiero a que el módulo Arduino Nano va a trabajar a 18Mhz con un voltaje de 3.3v cuando debería de ser un voltaje de 5v. Un voltaje de 3.3V permite una frecuencia máxima de reloj de 10Mhz, <strong>aunque en la práctica funciona con una batería de 3.7v</strong>, ya nos encontraríamos al límite, pero dentro.</p>
+<tr>
+<td>6</td>
+<td>64</td>
+<td>250000</td>
+<td>clock_div_64</td>
 
-<p>Aunque normalmente para trabajar a esos voltajes se suele usar una frecuencia más baja, 8Mhz.</p>
+</tr>
 
-<h2 id="conclusión">Conclusión</h2>
+<tr>
+<td>7</td>
+<td>128</td>
+<td>125000</td>
+<td>clock_div_128</td>
 
-<p><strong>La mejor solución para optimizar las baterías de 3.7v es comprar una placa de desarrollo Arduino que trabaje con el oscilador a 8Mhz.</strong> De este modo, la línea de corriente de 5v del USB va a ser convertida a 3.3v y vamos a trabajar a unas frecuencias más bajas y más fiables. Esto es debido a que normalmente a 8Mhz el voltaje que se necesita es de 3.3v.</p>
+</tr>
+<tr>
+<td>8</td>
+<td>256</td>
+<td>62500</td>
+<td>clock_div_256</td>
+</tr>
 
-<p>Algunos Arduino de bajo coste que trabajan a 3.3v son los Arduino Pro Mini a 8Mhz y 3.3v.</p>
+</tbody>
+</table>
+
+<h2 id="actualizar-el-valor-de-la-cpu-a-8mhz">Actualizar el valor de la CPU a 8Mhz</h2>
+<p>Si tomamos los valores de la tabla anterior para que nuestro Arduino trabaje a 8Mhz, tendremos que el valor del factor de división del CLKPR será 1. Para actualizar este registro hemos de escribir primero todos los valores a 0 menos el primer bit que recibe el nombre de CLKPCE que hemos de escribir a 1, indicando que empezamos la secuencia.</p>
+
+<p>Vamos a usar el operador de desplazamiento izquierdo de bytes de C <em>«</em>, que moverá un bit a la izquierda todos los bites que tenemos en el registro. Por ejemplo:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="mi">5</span> <span class="n">is</span> <span class="p">(</span><span class="mo">00000101</span><span class="p">)</span>
+<span class="n">five</span><span class="o">=</span><span class="mi">5</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="mi">10</span> <span class="n">is</span> <span class="p">(</span><span class="mo">00001010</span><span class="p">)</span>
+<span class="n">ten</span> <span class="o">=</span> <span class="n">five</span><span class="o">&lt;&lt;</span><span class="mi">1</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Partiendo de la base de que el registro CLKPR contiene todo 0 inicialmente, lo que hacemos es añadir un 1 a la derecha (recordemos que en binario leemos de derecha a izquierda).</p>
+
+<p>El código nos quedará del siguiente modo:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Changing CPU speed to 8Mhz"</span><span class="p">);</span>
+
+  <span class="n">noInterrupts</span><span class="p">();</span> <span class="c1">// deshabilitamos las interrupciones
+</span>  <span class="n">CLKPR</span> <span class="o">=</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">CLKPCE</span><span class="p">;</span> <span class="c1">// empezamos la secuencia de escritura
+</span>  <span class="n">CLKPR</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// seleccionamos el divisor desado, en nuestro caso el 1
+</span>  <span class="n">interrupts</span><span class="p">();</span> <span class="c1">// habilitamos las interrupciones
+</span><span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Este código se ejecutará a 8Mhz
+</span>  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Working!"</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 id="problemas">Problemas</h2>
+<p>Puede suceder que tu puerto de serie no funcione inicialmente y no veamos en el monitor los <em>print</em> que hemos puesto, sino un montón de caracteres, si esto te sucede puedes cambiar el baudrate a justo el anterior (la mitad), en nuestro ejemplo si tenemos 9600, pues 4800.</p>
+
+<p>Esto sucede porque la configuración de nuestro IDE dice que Arduino Uno ha de trabajar a 18Mhz, pero le estamos forzando a trabajar a menos velocidad, por lo que hay que hacer este apaño. También hay opción de cambiar la configuración de la placa y decirle que Arduino Uno trabaja a 8Mhz, para no tener que hacer estos trucos.</p>
+
+<h2 id="conclusiones">Conclusiones</h2>
+<p>Hay que tener en cuenta que los dispositivos conectados a Arduino pueden ver afectada su comunicación al trabajar a estas frecuencias. Simplemente hay que verificar que son compatibles, aunque la mayoría suelen serlo. Lo mismo ocurre con el voltaje, ya que no vamos a trabajar a 5v.</p>
+
+<p>Sin embargo, esto no va a afectar al puerto de serie que tenemos conectado a nuestro ordenador (si es que programamos con el IDE) con el cual programamos, ya que seguirá funcionando perfectamente y podemos comunicarnos a baud rates normales como siempre.</p>
+
+<p><strong>Con este pequeño cambio podemos reducir el consumo de nuestra batería de forma considerable y nos da pie a usar baterías de 3.7v.</strong></p>
 
                 </div>
             </section>
@@ -306,14 +411,14 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
                                 
                                   
                                     
-                                        
-                                        
-                                            <li><a href="/cambio-arduino-nano-8mhz-software">Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</a></li>
-                                        
-                                    
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                            <li><a href="/arduino-nano-ttl-3v">Arduno Nano funcionando a 3.7V y 16Mhz</a></li>
+                                        
                                     
                                   
                                 
@@ -359,55 +464,6 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/cambio-arduino-nano-8mhz-software">
-                <div class="post-card-image" style="background-image: url(/assets/images/2020-05-04-cambio-arduino-nano-8mhz-software/cover.jpg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/cambio-arduino-nano-8mhz-software">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Tecnología</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/images/icon-rounded.png" alt="El taller del huerto" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/eltallerdelhuerto/">El taller del huerto</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -415,12 +471,12 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/sensor-capacitivo-vs-resistivo">
-                <div class="post-card-image" style="background-image: url(/assets/images/2020-04-19-sensor-capacitivo-vs-resistivo/cover.jpg)"></div>
+            <a class="post-card-image-link" href="/arduino-nano-ttl-3v">
+                <div class="post-card-image" style="background-image: url(/assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/sensor-capacitivo-vs-resistivo">
+            <a class="post-card-content-link" href="/arduino-nano-ttl-3v">
                 <header class="post-card-header">
                     
                         
@@ -430,7 +486,7 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
                         
                     
 
-                    <h2 class="post-card-title">Sensor de humedad capacitivo vs resistivo</h2>
+                    <h2 class="post-card-title">Arduno Nano funcionando a 3.7V y 16Mhz</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -476,18 +532,18 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
         </a>
     </div>
     <!-- <span class="floating-header-divider">&mdash;</span> -->
-    <div class="floating-header-title">Arduno Nano funcionando a 3.7V y 16Mhz</div>
+    <div class="floating-header-title">Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Comparte esto! <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Arduno+Nano+funcionando+a+3.7V+y+16Mhz&amp;url=https://eltallerdelhuerto.com/arduino-nano-ttl-3v"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Cambio+de+frecuencia+de+Arduino+Nano+desde+18Mhz+a+8Mhz+por+software&amp;url=https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://eltallerdelhuerto.com/arduino-nano-ttl-3v"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

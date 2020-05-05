@@ -8,13 +8,28 @@
     
       
       <item>
+        <title>Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</title>
+        
+          <description>&lt;p&gt;Vamos a ver cómo modificar la frecuencia de reloj de la CPU de nuestro Arduino a través del software.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 04 May 2020 12:00:00 +0200</pubDate>
+        <link>
+        https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software</link>
+        <guid isPermaLink="true">https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Arduno Nano funcionando a 3.7V y 16Mhz</title>
         
           <description>&lt;p&gt;Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso.&lt;/p&gt;
 
 </description>
         
-        <pubDate>Sun, 26 Apr 2020 12:00:00 +0200</pubDate>
+        <pubDate>Mon, 27 Apr 2020 12:00:00 +0200</pubDate>
         <link>
         https://eltallerdelhuerto.com/arduino-nano-ttl-3v</link>
         <guid isPermaLink="true">https://eltallerdelhuerto.com/arduino-nano-ttl-3v</guid>

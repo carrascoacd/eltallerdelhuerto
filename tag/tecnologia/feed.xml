@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/tag/tecnologia/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2020-05-05T11:26:12+02:00</updated>
+  <updated>2020-05-16T17:44:04+02:00</updated>
   <id>https://eltallerdelhuerto.com/tag/tecnologia/feed.xml</id>
 
   
@@ -180,7 +180,20 @@
 &lt;h2 id=&quot;problemas&quot;&gt;Problemas&lt;/h2&gt;
 &lt;p&gt;Puede suceder que tu puerto de serie no funcione inicialmente y no veamos en el monitor los &lt;em&gt;print&lt;/em&gt; que hemos puesto, sino un montón de caracteres, si esto te sucede puedes cambiar el baudrate a justo el anterior (la mitad), en nuestro ejemplo si tenemos 9600, pues 4800.&lt;/p&gt;
 
-&lt;p&gt;Esto sucede porque la configuración de nuestro IDE dice que Arduino Uno ha de trabajar a 18Mhz, pero le estamos forzando a trabajar a menos velocidad, por lo que hay que hacer este apaño. También hay opción de cambiar la configuración de la placa y decirle que Arduino Uno trabaja a 8Mhz, para no tener que hacer estos trucos.&lt;/p&gt;
+&lt;p&gt;Esto sucede porque la configuración de nuestro IDE dice que Arduino Uno ha de trabajar a 18Mhz, pero le estamos forzando a trabajar a menos velocidad, por lo que hay que hacer este apaño.&lt;/p&gt;
+
+&lt;p&gt;También hay opción de cambiar la configuración de la placa y decirle que Arduino Uno trabaja a 8Mhz, para no tener que hacer estos trucos, para ello procedemos del siguiente modo.
+Hay que localizar el fichero &lt;em&gt;boards.txt&lt;/em&gt;, lo más sencillo es hacer el el terminal un &lt;em&gt;find / -name boards.txt&lt;/em&gt; y suele estar en el path &lt;em&gt;hardware/arduino/avr/boards.txt&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Localizamos la configuración de nuestro Arduino y cambiamos el valor, en mi caso es Arduino Nano:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;nano&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_cpu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;16000000L&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;por el siguiente&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;nano&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_cpu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8000000L&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Reiniciamos nuestro IDE para que cargue la configuración, y ya lo tenemos.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusiones&quot;&gt;Conclusiones&lt;/h2&gt;
 &lt;p&gt;Hay que tener en cuenta que los dispositivos conectados a Arduino pueden ver afectada su comunicación al trabajar a estas frecuencias. Simplemente hay que verificar que son compatibles, aunque la mayoría suelen serlo. Lo mismo ocurre con el voltaje, ya que no vamos a trabajar a 5v.&lt;/p&gt;

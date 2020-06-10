@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>Programar cuidados en C: cómo empezar</title>
+        
+          <description>&lt;p&gt;C es el lenguaje de programación que usamos en Arduino para programar las tareas de cuidado que necesitan nuestras plantas.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 04 Jun 2020 12:00:00 +0200</pubDate>
+        <link>
+        https://eltallerdelhuerto.com/programar-arduino-para-plantas</link>
+        <guid isPermaLink="true">https://eltallerdelhuerto.com/programar-arduino-para-plantas</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</title>
         
           <description>&lt;p&gt;Vamos a ver cómo modificar la frecuencia de reloj de la CPU de nuestro Arduino a través del software.&lt;/p&gt;

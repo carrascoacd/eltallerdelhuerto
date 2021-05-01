@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>KiCAD</title>
+        
+          <description>&lt;p&gt;KiCAD, que se pronuncia “Key CAD) es una herramienta open source que te permite diseñar circuitos. Me la ha recomendado un compañero del trabajo y voy a probarla.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 01 May 2021 12:00:00 +0200</pubDate>
+        <link>
+        https://eltallerdelhuerto.com/kicad-tutorial-como-empezar</link>
+        <guid isPermaLink="true">https://eltallerdelhuerto.com/kicad-tutorial-como-empezar</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Programar cuidados en C: cómo empezar</title>
         
           <description>&lt;p&gt;C es el lenguaje de programación que usamos en Arduino para programar las tareas de cuidado que necesitan nuestras plantas.&lt;/p&gt;
@@ -16,8 +31,8 @@
         
         <pubDate>Thu, 04 Jun 2020 12:00:00 +0200</pubDate>
         <link>
-        https://eltallerdelhuerto.com/programar-arduino-para-plantas</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/programar-arduino-para-plantas</guid>
+        https://eltallerdelhuerto.com/programar-arduino-para-plantas-copy</link>
+        <guid isPermaLink="true">https://eltallerdelhuerto.com/programar-arduino-para-plantas-copy</guid>
       </item>
       
     

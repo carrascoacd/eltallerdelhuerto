@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://eltallerdelhuerto.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" /><updated>2020-06-10T09:39:08+02:00</updated><id>https://eltallerdelhuerto.com/</id><title type="html">¿Plantas y automatización?</title><subtitle>Si eres curios@, aprende de forma práctica cómo aplicar la tecnología en el cuidado de tus plantas</subtitle><entry><title type="html">Programar cuidados en C: cómo empezar</title><link href="https://eltallerdelhuerto.com/programar-arduino-para-plantas" rel="alternate" type="text/html" title="Programar cuidados en C: cómo empezar" /><published>2020-06-04T12:00:00+02:00</published><updated>2020-06-04T12:00:00+02:00</updated><id>https://eltallerdelhuerto.com/programar-arduino-para-plantas</id><content type="html" xml:base="https://eltallerdelhuerto.com/programar-arduino-para-plantas">&lt;p&gt;C es el lenguaje de programación que usamos en Arduino para programar las tareas de cuidado que necesitan nuestras plantas.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://eltallerdelhuerto.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" /><updated>2021-05-01T16:16:47+02:00</updated><id>https://eltallerdelhuerto.com/</id><title type="html">¿Plantas y automatización?</title><subtitle>Si eres curios@, aprende de forma práctica cómo aplicar la tecnología en el cuidado de tus plantas</subtitle><entry><title type="html">KiCAD</title><link href="https://eltallerdelhuerto.com/kicad-tutorial-como-empezar" rel="alternate" type="text/html" title="KiCAD" /><published>2021-05-01T12:00:00+02:00</published><updated>2021-05-01T12:00:00+02:00</updated><id>https://eltallerdelhuerto.com/kicad-tutorial-como-empezar</id><content type="html" xml:base="https://eltallerdelhuerto.com/kicad-tutorial-como-empezar">&lt;p&gt;KiCAD, que se pronuncia “Key CAD) es una herramienta open source que te permite diseñar circuitos. Me la ha recomendado un compañero del trabajo y voy a probarla.&lt;/p&gt;
+
+&lt;p&gt;Yo lo que voy a hacer es diseñar una PCB para un Arduino Nano, de forma que luego pueda soldarla.&lt;/p&gt;
+
+&lt;p&gt;Normalmente he usado las típicas PCB que ya vienen perforadas y simplemente pues usas los agujeros que quieres, como por ejemplo estas &lt;img src=&quot;assets/images/2021-05-01-kicad-tutorial-como-empezar/pcb.jpg&quot; alt=&quot;PCB perforadas&quot; title=&quot;PCB perforadas&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo bueno que tiene el diseñarlo es que luego lo mandaré a imprimir y recibiré exactamente el diseño que he hecho.&lt;/p&gt;
+
+&lt;h2 id=&quot;instalación&quot;&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;KiCAD pesa bastante, lo puedes descargar de la su &lt;a href=&quot;https://www.kicad.org/download/&quot;&gt;propia web&lt;/a&gt; y está disponible para todos los SO más usados.&lt;/p&gt;
+
+&lt;p&gt;Yo voy a trabajar con la versión 5.1.9 para OX.&lt;/p&gt;
+
+&lt;h2 id=&quot;creando-el-proyecto&quot;&gt;Creando el proyecto&lt;/h2&gt;
+&lt;p&gt;Voy a seguir &lt;a href=&quot;https://forum.kicad.info/t/tutorial-introduction-to-pcb-design-with-kicad-version-5-1-getting-started/20600/2&quot;&gt;este tutorial&lt;/a&gt;, que parece bastante completo.&lt;/p&gt;
+
+&lt;p&gt;Le doy a &lt;code class=&quot;highlighter-rouge&quot;&gt;File &amp;gt; New Project&lt;/code&gt; y lo guardo con un nombre, en este caso &lt;em&gt;weather_station&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Me genera dos ficheros, uno &lt;code class=&quot;highlighter-rouge&quot;&gt;.pcb&lt;/code&gt;y otro &lt;code class=&quot;highlighter-rouge&quot;&gt;. sch&lt;/code&gt;. Supongo que el PCB será para imprimir, ahora lo veré.&lt;/p&gt;
+
+&lt;p&gt;Siguiendo el tutorial, voy a abrir el fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;sch&lt;/code&gt; que contiene el esquema del circuito.&lt;/p&gt;
+
+&lt;h2 id=&quot;crear-el-diseño-de-un-led&quot;&gt;Crear el diseño de un led.&lt;/h2&gt;
+&lt;p&gt;Para empezar voy a probar con un led simplemente.&lt;/p&gt;
+
+&lt;p&gt;Le doy a &lt;code class=&quot;highlighter-rouge&quot;&gt;Place Symbol&lt;/code&gt; en el menú de la derecha, y busco &lt;code class=&quot;highlighter-rouge&quot;&gt;led&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ahora selecciono el primero, &lt;code class=&quot;highlighter-rouge&quot;&gt;LED&lt;/code&gt;, sinceramente hay muchos más pero no tengo ni idea, así que vamos con el primero.&lt;/p&gt;
+
+&lt;p&gt;A esto que acabamos de seleccionar lo llaman footprint.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;El footprint es lo que define la interfaz de comunicación con cada elemento, es decir, donde vendrán los zócalos para soldar entre otras cosas.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Cuando ya aparece el footprint del LED en el esquema, el tutorial dice que hay unos círculos en al lado de cada número que me permitirán hacer conexiones y que puedo unir.&lt;/p&gt;
+
+&lt;p&gt;A continuación, justo debajo del botón de &lt;code class=&quot;highlighter-rouge&quot;&gt;Place Symbol&lt;/code&gt;está el botón para añadir alimentación, por lo que voy a añadir una toma de tierra GND y una fuente de 5V. Ahora simplemente los conecto (bien, voy a buscar en Google cómo, porque no sé qué pare es la positiva y la negativa en el símbolo).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+Repasando que es un LED, el ánodo es la parte positiva (suele ser la pata más larga del LED) y el cátodo es la negativa. Voy a imaginarme un gato (cato) enfadado, y ya está, memorizado para siempre: el gato enfadado es negativo.
+
+Las flechas parece como que indican el sentido de la corriente, por lo que es sencillo conectarlo. La punta de la flecha es el cátodo.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Voy a conectar, ahora sí, el LED. Para ello voy selecciono el icono de la línea verde de la derecha que dice &lt;code class=&quot;highlighter-rouge&quot;&gt;Place wire&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Voy a parar por ahora!&lt;/p&gt;</content><author><name>El taller del huerto</name></author><category term="tecnologia" /><summary type="html">KiCAD, que se pronuncia “Key CAD) es una herramienta open source que te permite diseñar circuitos. Me la ha recomendado un compañero del trabajo y voy a probarla.</summary></entry><entry><title type="html">Programar cuidados en C: cómo empezar</title><link href="https://eltallerdelhuerto.com/programar-arduino-para-plantas-copy" rel="alternate" type="text/html" title="Programar cuidados en C: cómo empezar" /><published>2020-06-04T12:00:00+02:00</published><updated>2020-06-04T12:00:00+02:00</updated><id>https://eltallerdelhuerto.com/programar-arduino-para-plantas%20copy</id><content type="html" xml:base="https://eltallerdelhuerto.com/programar-arduino-para-plantas-copy">&lt;p&gt;C es el lenguaje de programación que usamos en Arduino para programar las tareas de cuidado que necesitan nuestras plantas.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Un lenguaje de programación se trata de un lenguaje pensado para instruir a un ordenador a ejecutar tareas&lt;/strong&gt;, como he comentado. Como cualquier lenguaje tiene una serie de reglas gramaticales y vocabulario.&lt;/p&gt;
 

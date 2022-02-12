@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://eltallerdelhuerto.com/tag/tecnologia/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2022-02-12T18:35:25+01:00</updated>
+  <updated>2022-02-12T18:36:16+01:00</updated>
   <id>https://eltallerdelhuerto.com/tag/tecnologia/feed.xml</id>
 
   
@@ -76,7 +76,7 @@ Dada la ley de Ohm, V=I&lt;em&gt;R, R4=0.1/10&lt;/em&gt;10^-6 = 10000Ω = 10kΩ&
 
 &lt;p&gt;La fuente de alimentación de 5V representa la salida digital de Arduino.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/images/2022-02-12-mofset-switch/design.png&amp;quot; Diseño con CircuitLab del circuito&amp;quot;&quot; alt=&quot;Diseño con CicuitLab del circuito&quot; /&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;img src=&quot;assets/images/2022-02-12-mofset-switch/design.png&quot; alt=&quot;Diseño con CicuitLab del circuito&quot; title=&quot;Diseño con CircuitLab del circuito&quot; /&gt;&lt;/p&gt;</content>
 
       
       

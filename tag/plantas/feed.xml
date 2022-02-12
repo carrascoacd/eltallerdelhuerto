@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-  <link href="http://localhost:4000/tag/plantas/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-02-12T18:28:06+01:00</updated>
-  <id>http://localhost:4000/tag/plantas/feed.xml</id>
+  <link href="https://eltallerdelhuerto.com/tag/plantas/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
+  <updated>2022-02-12T18:29:28+01:00</updated>
+  <id>https://eltallerdelhuerto.com/tag/plantas/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">La poda de rejuvenecimiento de un viejo Almendro</title>
-      <link href="http://localhost:4000/poda-rejuvenecimiento-almendro" rel="alternate" type="text/html" title="La poda de rejuvenecimiento de un viejo Almendro" />
+      <link href="https://eltallerdelhuerto.com/poda-rejuvenecimiento-almendro" rel="alternate" type="text/html" title="La poda de rejuvenecimiento de un viejo Almendro" />
       <published>2020-02-04T11:00:00+01:00</published>
       <updated>2020-02-04T11:00:00+01:00</updated>
-      <id>http://localhost:4000/poda-rejuvenecimiento-almendro</id>
-      <content type="html" xml:base="http://localhost:4000/poda-rejuvenecimiento-almendro">&lt;p&gt;Lo que me hubiera gustado saber antes de hacer la poda de rejuvenecimiento de un Almendro.&lt;/p&gt;
+      <id>https://eltallerdelhuerto.com/poda-rejuvenecimiento-almendro</id>
+      <content type="html" xml:base="https://eltallerdelhuerto.com/poda-rejuvenecimiento-almendro">&lt;p&gt;Lo que me hubiera gustado saber antes de hacer la poda de rejuvenecimiento de un Almendro.&lt;/p&gt;
 
 &lt;h2 id=&quot;por-qué-le-podé-tan-severamente&quot;&gt;¿Por qué le podé tan severamente?&lt;/h2&gt;
 

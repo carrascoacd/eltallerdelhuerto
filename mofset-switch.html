@@ -11,7 +11,7 @@
 
 
 
-    <title>Arduno Nano funcionando a 3.7V y 16Mhz</title>
+    <title>Notas: MOFSETs como switch</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -30,26 +30,26 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="canonical" href="http://localhost:4000/arduino-nano-ttl-3v" />
+    <link rel="canonical" href="http://localhost:4000/mofset-switch" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="El taller del huerto" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Arduno Nano funcionando a 3.7V y 16Mhz" />
-    <meta property="og:description" content="Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso. En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente. Problema Al" />
-    <meta property="og:url" content="http://localhost:4000/arduino-nano-ttl-3v" />
-    <meta property="og:image" content="http://localhost:4000/assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg" />
+    <meta property="og:title" content="Notas: MOFSETs como switch" />
+    <meta property="og:description" content="En este post persigo guardar las notas que me serán útiles para entender el diseño que he llevado a cabo de un circuito switch con MOFSETs. Notas para la creación de un controlador de electroválvula Este controlador va a alimentarse con una batería de 12V. Yo voy a usar la" />
+    <meta property="og:url" content="http://localhost:4000/mofset-switch" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/2021-02-12-mofset-switch/design.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2020-04-27T12:00:00+02:00" />
-    <meta property="article:modified_time" content="2020-04-27T12:00:00+02:00" />
+    <meta property="article:published_time" content="2022-02-12T11:00:00+01:00" />
+    <meta property="article:modified_time" content="2022-02-12T11:00:00+01:00" />
     <meta property="article:tag" content="Tecnologia" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Arduno Nano funcionando a 3.7V y 16Mhz" />
-    <meta name="twitter:description" content="Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso. En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente. Problema Al" />
+    <meta name="twitter:title" content="Notas: MOFSETs como switch" />
+    <meta name="twitter:description" content="En este post persigo guardar las notas que me serán útiles para entender el diseño que he llevado a cabo de un circuito switch con MOFSETs. Notas para la creación de un controlador de electroválvula Este controlador va a alimentarse con una batería de 12V. Yo voy a usar la" />
     <meta name="twitter:url" content="http://localhost:4000/" />
-    <meta name="twitter:image" content="http://localhost:4000/assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/2021-02-12-mofset-switch/design.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="El taller del huerto" />
     <meta name="twitter:label2" content="Filed under" />
@@ -68,18 +68,18 @@
         "name": "El taller del huerto",
         "logo": "http://localhost:4000/assets/images/icon-rounded.png"
     },
-    "url": "http://localhost:4000/arduino-nano-ttl-3v",
+    "url": "http://localhost:4000/mofset-switch",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:4000/assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg",
+        "url": "http://localhost:4000/assets/images/2021-02-12-mofset-switch/design.png",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/arduino-nano-ttl-3v"
+        "@id": "http://localhost:4000/mofset-switch"
     },
-    "description": "Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso. En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente. Problema Al"
+    "description": "En este post persigo guardar las notas que me serán útiles para entender el diseño que he llevado a cabo de un circuito switch con MOFSETs. Notas para la creación de un controlador de electroválvula Este controlador va a alimentarse con una batería de 12V. Yo voy a usar la"
 }
     </script>
 
@@ -92,7 +92,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Arduno Nano funcionando a 3.7V y 16Mhz" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Notas: MOFSETs como switch" href="/feed.xml" />
 
 
     <!-- Cookie consent related things -->
@@ -153,7 +153,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="27 April 2020">27 April 2020</time>
+                    <time class="post-full-meta-date" datetime="12 February 2022">12 February 2022</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -163,62 +163,56 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">Arduno Nano funcionando a 3.7V y 16Mhz</h1>
+                <h1 class="post-full-title">Notas: MOFSETs como switch</h1>
             </header>
 
             
-            <figure class="post-full-image" style="background-image: url(/assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg)">
+            <figure class="post-full-image" style="background-image: url(/assets/images/2021-02-12-mofset-switch/design.png)">
             </figure>
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso.</p>
+                    <p>En este post persigo guardar las notas que me serán útiles para entender el diseño que he llevado a cabo de un circuito switch con MOFSETs.</p>
 
-<p>En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente.</p>
+<h2 id="notas-para-la-creación-de-un-controlador-de-electroválvula">Notas para la creación de un controlador de electroválvula</h2>
+<p>Este controlador va a alimentarse con una batería de 12V. Yo voy a usar la que acabo de cambiar de mi moto, ya que para este tipo de trabajos vale perfectamente.</p>
 
-<h2 id="problema">Problema</h2>
-<p>Al trabajar con el módulo SIM800L para la comunicación GPRS hemos de tener en cuenta que el nivel lógico de este módulo es 3.3V. Por lo que la línea lógica de 5v de Arduino Nano no nos va a valer.</p>
+<p>Además, tengo una electroválvula de 12V que es la que voy a abrir y cerrar con el controlador. Para ello, voy a usar un circuito basado en MOFSET canal N que trabaja a nivel lógico: IRLZ44N y cualquier MOFSET de canal P, en este caso voy a usar los IRF5210 que los tengo a mano.</p>
 
-<p>El módulo SIM800 va a funcionar a 5v (siempre que haya una batería propia para SIM800L, que veremos en otro post), pero <strong>vamos a quemar nuestro módulo GSM al usar el canal RX o Reset a 5v provenientes de Arduino.</strong></p>
+<p>La idea es usar el canal N como switch del de canal P, de forma que los 3.3V de Arduino abrirán el circuito que hará que el voltaje en el MOFSET de canal P sea 0V en el Gate, por lo que se mantendrán abiertos (normalmente abiertos).</p>
 
-<p>Además, si queremos usar una cómoda batería de litio 18650 o LiPo de 3.7V para alimentar Arduino, mantener un step-up para tener un voltaje constante de 5v es muy costoso, y vamos a tener que cargarla cada poco tiempo. Esto es debido a que el step-up va a pedir a la batería más en todo momento, aunque tengamos nuestro Arduino en modo sleep.</p>
+<p>Sin embargo, cuando el MOFSET de canal N se cierre, con la resistencia pull-up del canal P, tendremos el MOFSET cerrado, es decir, con un voltaje de unos 12V en su Gate.</p>
 
-<p>No recomiendo nada su uso, por experiencia, ya que en cuestión de horas podemos agotar la batería dejando nuestro proyecto muerto.</p>
+<h2 id="resistencia-pull-down">Resistencia pull-down</h2>
 
-<p>Y por experiencia también, he quemado un par de módulos al trabajar con 5v a nivel lógico, cuando en sus specs exponía que había que usarlos a 3.3V. Y esto ha sido por el USB, al cargar los sketch y alimentarlo posteriormente para las pruebas conectado y comunicándose. Recordemos que el USB envía 5v.</p>
+<p>Considero que el LOW máximo es 0.3v
+Vin=3.3V
+VR5=3.3V - 0.3V = 3V
+Intensidad max Arduino = 20mA, pero limito a 10nA por seguridad
+Dada la ley de Ohm, V=I<em>R, R5=3/10</em>10^-6 = 30000Ω = 30kΩ. Voy a usar una de 10k que es más común y tendremos el mismo orden de intensidad en nano-amperios.</p>
 
-<h2 id="solución">Solución</h2>
-<p>Para evitar este problema, podemos hacer algo muy simple, <strong>eliminar el diodo que conecta la línea de 5v del USB a nuestro Arduino Nano</strong>. De este modo, vamos a poder controlar qué voltaje le aplicamos, en mi caso 3.7v provenientes de una batería de litio 18650.</p>
+<h2 id="resistencia-para-proteger-arduino">Resistencia para proteger Arduino</h2>
+<p>Aplico la misma lógica para R3, dado que no quiero que la corriente de carga inicial del MOFSET supere 10mA. Para ello voy a usar una resistencia de 270Ω.</p>
 
-<p><img src="assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-before.jpeg" alt="Arduino Nano antes con el diodo que conecta la linea de 5v del USB conectado" title="Arduino Nano antes con el diodo que conecta la linea de 5v del USB conectado" /></p>
+<h2 id="resistencia-pull-up">Resistencia pull-up</h2>
+<p>Cuando el IRLZ44N está ON, R4 está directamente conectada a GND, es como un circuito cerrado.</p>
 
-<p>Mira el círculo negro que hay en la imagen de arriba, ese es el diodo que vamos a remover.</p>
+<p>Vamos a poner una intensidad mucho más baja para evitar una gran caída de voltaje con resistencias del orden de cientos de amperios. Por ejemplo 10nA</p>
 
-<p><img src="assets/images/2020-04-27-arduino-nano-ttl-3v/arduino-after.jpeg" alt="Arduino Nano después con el diodo que conecta la linea de 5v del USB eliminado" title="Arduino Nano después con el diodo que conecta la linea de 5v del USB eliminado" /></p>
+<p>Como las resistencias en los Gate de los MOFSET son casi infinitas, el circuito actúa como si estuviera cerrado, luego no hay corriente entre R4 y el Gate.</p>
 
-<p>De nuevo, mira el círculo negro donde se ve como el diodo ha sido eliminado.</p>
+<p>Considero que el HIGH mínimo es 11.9
+Vin=12V
+VR5=12V - 11.9V = 0.1V
+Dada la ley de Ohm, V=I<em>R, R4=0.1/10</em>10^-6 = 10000Ω = 10kΩ</p>
 
-<p>Otra opción es añadir un divisor de voltaje entre nuestro Arduino y los módulos que usemos a 3.3V si queremos no quemarlos.
-Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no funcionará a no ser que mantengamos la alimentación de Arduino Nano a 5v.</strong></p>
+<h2 id="diseño">Diseño</h2>
+<p>En el diseño he usado como ejemplo un Arduino de 5V y un MOFSET IRFZ44N, pero aplica igual para el que he usado realmente, solo que cambiamos el voltaje por el de un Arduino de 3.3V.</p>
 
-<p>Es decir al aplicar un divisor de voltaje para llegar de 5 a 3v tenemos que la diferencia de 5v a 3.3v es 1.7v. Pero el resultado la diferencia de ese mismo divisor de voltaje aplicado a 3.7v son 2v. Y 2v no es detectado como nivel lógico alto (1) por algunos componentes, como es el caso del SIM800L por lo que no va a funcionar.</p>
+<p>La fuente de alimentación de 5V representa la salida digital de Arduino.</p>
 
-<p><strong>Por lo que añadiendo un divisor de voltaje al puerto de serie haremos que los módulos con lógica 3.3v dejen de funcionar cuando desconectemos el USB y lo alimentemos con una batería de 3.7v</strong>.</p>
-
-<p>Por lo que si realizamos este cambio y eliminamos el diodo, tenemos que alimentar Arduino mientras lo tenemos conectado al USB para que funcione, ya que la línea de corriente de 5v estaría eliminada.</p>
-
-<h2 id="un-poco-fuera-de-especificación">Un poco fuera de especificación</h2>
-
-<p>Cuando digo que estamos fuera de la especificación me refiero a que el módulo Arduino Nano va a trabajar a 18Mhz con un voltaje de 3.3v cuando debería de ser un voltaje de 5v. Un voltaje de 3.3V permite una frecuencia máxima de reloj de 10Mhz, <strong>aunque en la práctica funciona con una batería de 3.7v</strong>, ya nos encontraríamos al límite, pero dentro.</p>
-
-<p>Aunque normalmente para trabajar a esos voltajes se suele usar una frecuencia más baja, 8Mhz.</p>
-
-<h2 id="conclusión">Conclusión</h2>
-
-<p><strong>La mejor solución para optimizar las baterías de 3.7v es comprar una placa de desarrollo Arduino que trabaje con el oscilador a 8Mhz.</strong> De este modo, la línea de corriente de 5v del USB va a ser convertida a 3.3v y vamos a trabajar a unas frecuencias más bajas y más fiables. Esto es debido a que normalmente a 8Mhz el voltaje que se necesita es de 3.3v.</p>
-
-<p>Algunos Arduino de bajo coste que trabajan a 3.3v son los Arduino Pro Mini a 8Mhz y 3.3v.</p>
+<p><img src="assets/images/2021-02-12-mofset-switch/design.png&quot;Diseño con CircuitLab del circuito&quot;" alt="Diseño con CicuitLab del circuito" /></p>
 
                 </div>
             </section>
@@ -306,11 +300,6 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
                                 
                                   
                                     
-                                        
-                                        
-                                            <li><a href="/mofset-switch">Notas: MOFSETs como switch</a></li>
-                                        
-                                    
                                   
                                 
                                   
@@ -335,10 +324,15 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
                                     
                                         
                                         
+                                            <li><a href="/cambio-arduino-nano-8mhz-software">Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</a></li>
+                                        
                                     
                                   
                                 
                                   
+                                    
+                                        
+                                        
                                     
                                   
                                 
@@ -380,55 +374,6 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/cambio-arduino-nano-8mhz-software">
-                <div class="post-card-image" style="background-image: url(/assets/images/2020-05-04-cambio-arduino-nano-8mhz-software/cover.jpg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/cambio-arduino-nano-8mhz-software">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Tecnología</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/images/icon-rounded.png" alt="El taller del huerto" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/eltallerdelhuerto/">El taller del huerto</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -436,12 +381,12 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/sensor-capacitivo-vs-resistivo">
-                <div class="post-card-image" style="background-image: url(/assets/images/2020-04-19-sensor-capacitivo-vs-resistivo/cover.jpg)"></div>
+            <a class="post-card-image-link" href="/kicad-tutorial-como-empezar">
+                <div class="post-card-image" style="background-image: url(/assets/images/2021-05-01-kicad-tutorial-como-empezar/cover.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/sensor-capacitivo-vs-resistivo">
+            <a class="post-card-content-link" href="/kicad-tutorial-como-empezar">
                 <header class="post-card-header">
                     
                         
@@ -451,7 +396,7 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
                         
                     
 
-                    <h2 class="post-card-title">Sensor de humedad capacitivo vs resistivo</h2>
+                    <h2 class="post-card-title">KiCAD</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -497,18 +442,18 @@ Pero en cualquier caso, vamos a tener el problema de que <strong>el módulo no f
         </a>
     </div>
     <!-- <span class="floating-header-divider">&mdash;</span> -->
-    <div class="floating-header-title">Arduno Nano funcionando a 3.7V y 16Mhz</div>
+    <div class="floating-header-title">Notas: MOFSETs como switch</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Comparte esto! <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Arduno+Nano+funcionando+a+3.7V+y+16Mhz&amp;url=https://eltallerdelhuerto.com/arduino-nano-ttl-3v"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Notas%3A+MOFSETs+como+switch&amp;url=https://eltallerdelhuerto.com/mofset-switch"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://eltallerdelhuerto.com/arduino-nano-ttl-3v"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://eltallerdelhuerto.com/mofset-switch"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

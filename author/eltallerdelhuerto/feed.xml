@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-  <link href="https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="https://eltallerdelhuerto.com/" rel="alternate" type="text/html" />
-  <updated>2022-02-12T18:36:16+01:00</updated>
-  <id>https://eltallerdelhuerto.com/author/eltallerdelhuerto/feed.xml</id>
+  <link href="http://localhost:4000/author/eltallerdelhuerto/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2025-02-28T16:02:46+01:00</updated>
+  <id>http://localhost:4000/author/eltallerdelhuerto/feed.xml</id>
 
   
   
@@ -32,12 +32,152 @@
 
   
     <entry>
+      <title type="html">Ergonomía del teclado</title>
+      <link href="http://localhost:4000/ergonomia-teclado" rel="alternate" type="text/html" title="Ergonomía del teclado" />
+      <published>2025-02-28T11:00:00+01:00</published>
+      <updated>2025-02-28T11:00:00+01:00</updated>
+      <id>http://localhost:4000/ergonomia-teclado</id>
+      <content type="html" xml:base="http://localhost:4000/ergonomia-teclado">&lt;p&gt;Terminé el día con dolor de muñeca y pinchazos en el dedo índice derecho. ¿Qué hago ahora? Mañana me esperan otras 8 horas de trabajo.&lt;/p&gt;
+
+&lt;p&gt;Este artículo es mitad storytelling, mitad guía de supervivencia. Si pasas mucho tiempo frente a un teclado, puede que te salve de futuros dolores.&lt;/p&gt;
+
+&lt;h2 id=&quot;los-inicios-cuando-la-ergonomía-era-un-mito&quot;&gt;Los inicios: cuando la ergonomía era un mito&lt;/h2&gt;
+
+&lt;p&gt;Empecé a teclear 8 horas al día, 5 días a la semana, hace más de una década. Como Ingeniero de Software, mi día a día gira en torno a un teclado, ya sea para programar, documentar o comunicarme. Pero, como en la mayoría de los casos, nadie me enseñó sobre ergonomía en la universidad. Simplemente usaba lo que tenía a mano: portátil, ratón y una silla cualquiera.&lt;/p&gt;
+
+&lt;h3 id=&quot;mi-primera-start-up-y-el-primer-aviso-del-cuerpo&quot;&gt;Mi primera Start-up y el primer aviso del cuerpo&lt;/h3&gt;
+
+&lt;p&gt;Los primeros pasos los di en una start-up nacida en el garaje de un amigo. Mi equipo: un portátil y un ratón inalámbrico. En este tipo de empresas, la ergonomía es un lujo desconocido.&lt;/p&gt;
+
+&lt;p&gt;Después de dos años usando un ratón cualquiera, mi muñeca empezó a protestar. Decidí invertir en un ratón de gaming, más ergonómico, y me prometí no volver a subestimar la importancia de estos detalles. Desde entonces, siempre llevo mi ratón a donde vaya.&lt;/p&gt;
+
+&lt;p&gt;Por otro lado, mi postura era un desastre: encorvado sobre el portátil, pasando horas sin moverme. Pero en aquel momento, ni siquiera era consciente de ello.&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-soluciono-mi-dolor&quot;&gt;¿Cómo soluciono mi dolor?&lt;/h2&gt;
+
+&lt;p&gt;Mi carrera avanzó, pasé de start-ups a multinacionales y luego al trabajo remoto. Fue en una de estas empresas donde descubrí la silla de mis sueños: la Steelcase Please I. Por fin tenía un respaldo que realmente me sostenía (algo fundamental si eres bajito). Aprendí sobre sillas, ratones y poco a poco me volví un experto en ergonomía… pero aun así, me hice daño.&lt;/p&gt;
+
+&lt;p&gt;Un día de febrero de 2024, empezaron los pinchazos en mi dedo índice al hacer clic con el ratón. Pensé que era pasajero. Intenté evitar el dedo índice usando el dedo medio, pero esto solo trasladó el dolor a la muñeca. Probé con una muñequera y la cosa empeoró.&lt;/p&gt;
+
+&lt;p&gt;Fui al fisioterapeuta, sin éxito. El médico me recomendó descanso. Me tomé dos semanas de vacaciones, pero el dolor seguía ahí. Al final, el traumatólogo me hizo una ecografía y… “todo está bien”. ¿Pero entonces por qué me duele?&lt;/p&gt;
+
+&lt;p&gt;Dos meses después, harto de soluciones superficiales, decidí aplicar lo que mejor sé hacer como ingeniero: medir, analizar y optimizar.&lt;/p&gt;
+
+&lt;h2 id=&quot;diagnóstico-midiendo-mi-carga-de-trabajo&quot;&gt;Diagnóstico: midiendo mi carga de trabajo&lt;/h2&gt;
+
+&lt;p&gt;Para entender el problema, instalé &lt;strong&gt;WhatPulse&lt;/strong&gt;, una app que mide cuántas veces pulsas cada tecla y botón del ratón al día. También usé la técnica Pomodoro (30 minutos de trabajo, 5 de descanso) para forzarme a hacer pausas.&lt;/p&gt;
+
+&lt;h3 id=&quot;descubrimiento-impactante-mi-dedo-índice-estaba-en-sobrecarga&quot;&gt;Descubrimiento impactante: mi dedo índice estaba en sobrecarga&lt;/h3&gt;
+
+&lt;p&gt;Tras una semana de monitorización, descubrí que mi dedo índice soportaba el 15% de todas mis pulsaciones. En números concretos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Espacio:&lt;/strong&gt; 2584 (15.04%)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Botón izquierdo del ratón:&lt;/strong&gt; 2548 (14.83%)&lt;/li&gt;
+  &lt;li&gt;Backspace: 1589 (9.25%)&lt;/li&gt;
+  &lt;li&gt;E: 1536 (8.94%)&lt;/li&gt;
+  &lt;li&gt;A: 1177 (6.85%)&lt;/li&gt;
+  &lt;li&gt;O: 1091 (6.35%)&lt;/li&gt;
+  &lt;li&gt;T: 1059 (6.16%)&lt;/li&gt;
+  &lt;li&gt;I: 939 (5.47%)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Left Command:&lt;/strong&gt; 919 (5.35%)&lt;/li&gt;
+  &lt;li&gt;S: 902 (5.25%)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;(Quién diría que la tecla más usada no es la “E”, sino el espacio y el clic del ratón…)&lt;/p&gt;
+
+&lt;h2 id=&quot;soluciones-y-pruebas&quot;&gt;Soluciones y pruebas&lt;/h2&gt;
+
+&lt;h3 id=&quot;primera-fase-cambios-en-hardware&quot;&gt;&lt;strong&gt;Primera fase: cambios en hardware&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Nuevo teclado:&lt;/strong&gt; Logitech Wave Keys → Algo mejor, pero no suficiente.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ratón de bola (Logitech Ergo)&lt;/strong&gt; → Ayuda, pero el dolor persiste.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ratón vertical (Logitech Lift)&lt;/strong&gt; → Mejora, pero sigue doliendo.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reposamuñecas&lt;/strong&gt; → ¡Éxito! Reduce bastante la presión en la muñeca.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;El dolor disminuyó, pero no desapareció.&lt;/p&gt;
+
+&lt;h3 id=&quot;segunda-fase-optimización-extrema&quot;&gt;&lt;strong&gt;Segunda fase: optimización extrema&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Redistribuyo las teclas con la app Karabiner Elements&lt;/strong&gt;, asignando el clic del ratón a la tecla “esc”.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cambio mi rutina de ejercicio&lt;/strong&gt;, volviendo a natación y gimnasio.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cambio a un teclado Kinesis Advantage 360 Pro con switches lineales&lt;/strong&gt;, que reduce la carga en mis índices.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Uso un ratón Logitech Lift para zurdos&lt;/strong&gt; para alternar manos.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;problema-resuelto-o-no&quot;&gt;Problema resuelto… ¿o no?&lt;/h2&gt;
+
+&lt;p&gt;¡Por fin! Mi índice y mi muñeca dejan de doler. Pero… sorpresa: ahora me duelen los pulgares. Y justo el día de mi cumpleaños.&lt;/p&gt;
+
+&lt;p&gt;La razón: el teclado Kinesis asigna demasiadas funciones a los pulgares, y mis manos son pequeñas. De vuelta al análisis:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Espacio:&lt;/strong&gt; 2584 (15.04%)&lt;/li&gt;
+  &lt;li&gt;Botón izquierdo del ratón: 2548 (14.83%)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Backspace:&lt;/strong&gt; 1589 (9.25%)&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Left Command:&lt;/strong&gt; 919 (5.35%)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Mis pulgares ahora soportaban el 15% de las pulsaciones. Decidí cambiar nuevamente de teclado.&lt;/p&gt;
+
+&lt;h3 id=&quot;fase-final-la-configuración-definitiva&quot;&gt;&lt;strong&gt;Fase final: la configuración definitiva&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Cambio al teclado Digma Defy&lt;/strong&gt;, que permite personalizar completamente la distribución y alivia la carga en los pulgares (si quieres).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sigo usando dos ratones (diestro y zurdo) para distribuir la carga&lt;/strong&gt;. Aunque lo que más me ayuda es tener el click del ratón en en el teclado (con Digma es nativo y no necesitas otra app).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mantengo los descansos Pomodoro y ejercicios de manos&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Introduzco abreviaciones y dictado por voz&lt;/strong&gt; para reducir pulsaciones. Dictado por voz es increíblemente útil si la mayoría del tiempo te comunicas por chat o medios escritos.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusión-lo-que-aprendí-después-de-un-año-de-lucha&quot;&gt;Conclusión: lo que aprendí después de un año de lucha&lt;/h2&gt;
+
+&lt;p&gt;Tardé &lt;strong&gt;6 meses en desarrollar el dolor y más de 6 en solucionarlo&lt;/strong&gt;. Mis aprendizajes clave:&lt;/p&gt;
+
+&lt;p&gt;✔️ &lt;strong&gt;Escucha tu cuerpo&lt;/strong&gt;. Si algo te duele, para y analiza qué cambió. ✔️ &lt;strong&gt;Mide y ajusta&lt;/strong&gt;. Usa apps para ver cuántas veces pulsas cada tecla y adapta tu entorno. ✔️ &lt;strong&gt;Consulta a profesionales&lt;/strong&gt;. Un fisioterapeuta puede ayudar, pero si no cambias tu ergonomía, nada mejorará. ✔️ &lt;strong&gt;La ergonomía importa&lt;/strong&gt;. Un buen setup puede ahorrarte meses de dolor. ✔️ &lt;strong&gt;Ejercicio y alimentación&lt;/strong&gt;. Fortalecer músculos y tendones es clave.&lt;/p&gt;
+
+&lt;h2 id=&quot;mi-setup-final&quot;&gt;Mi setup final&lt;/h2&gt;
+
+&lt;p&gt;🔹 &lt;strong&gt;Teclado:&lt;/strong&gt; Digma Defy, con distribución personalizada y dictado por voz nativo de mac. 🔹 &lt;strong&gt;Ratón:&lt;/strong&gt; Logitech Lift (diestro y zurdo). 🔹 &lt;strong&gt;Silla:&lt;/strong&gt; Steelcase Please I. 🔹 &lt;strong&gt;Mesa:&lt;/strong&gt; Elevable de Ikea + reposapiés para buena postura. 🔹 &lt;strong&gt;Pantalla:&lt;/strong&gt; HP 26” 4K. 🔹 &lt;strong&gt;Descanso:&lt;/strong&gt; Cada 30 min. 🔹 &lt;strong&gt;Ejercicio:&lt;/strong&gt; Fuerza y natación 2-3 veces/semana. 🔹 &lt;strong&gt;Métricas:&lt;/strong&gt; Uso WhatPulse para controlar mi carga.&lt;/p&gt;
+
+&lt;p&gt;📌 &lt;strong&gt;Dato final:&lt;/strong&gt; Tecleamos alrededor de &lt;strong&gt;5 millones de teclas al año&lt;/strong&gt;.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>El taller del huerto</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="ergonomia" />
+      
+
+      
+        <summary type="html">Terminé el día con dolor de muñeca y pinchazos en el dedo índice derecho. ¿Qué hago ahora? Mañana me esperan otras 8 horas de trabajo.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Notas: MOFSETs como switch</title>
-      <link href="https://eltallerdelhuerto.com/mofset-switch" rel="alternate" type="text/html" title="Notas: MOFSETs como switch" />
+      <link href="http://localhost:4000/mofset-switch-copy" rel="alternate" type="text/html" title="Notas: MOFSETs como switch" />
       <published>2022-02-12T11:00:00+01:00</published>
       <updated>2022-02-12T11:00:00+01:00</updated>
-      <id>https://eltallerdelhuerto.com/mofset-switch</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/mofset-switch">&lt;p&gt;En este post persigo guardar las notas que me serán útiles para entender el diseño que he llevado a cabo de un circuito switch con MOFSETs.&lt;/p&gt;
+      <id>http://localhost:4000/mofset-switch%20copy</id>
+      <content type="html" xml:base="http://localhost:4000/mofset-switch-copy">&lt;p&gt;En este post persigo guardar las notas que me serán útiles para entender el diseño que he llevado a cabo de un circuito switch con MOFSETs.&lt;/p&gt;
 
 &lt;h2 id=&quot;notas-para-la-creación-de-un-controlador-de-electroválvula&quot;&gt;Notas para la creación de un controlador de electroválvula&lt;/h2&gt;
 &lt;p&gt;Este controlador va a alimentarse con una batería de 12V. Yo voy a usar la que acabo de cambiar de mi moto, ya que para este tipo de trabajos vale perfectamente.&lt;/p&gt;
@@ -106,11 +246,11 @@ Dada la ley de Ohm, V=I&lt;em&gt;R, R4=0.1/10&lt;/em&gt;10^-6 = 10000Ω = 10kΩ&
   
     <entry>
       <title type="html">KiCAD</title>
-      <link href="https://eltallerdelhuerto.com/kicad-tutorial-como-empezar" rel="alternate" type="text/html" title="KiCAD" />
+      <link href="http://localhost:4000/kicad-tutorial-como-empezar" rel="alternate" type="text/html" title="KiCAD" />
       <published>2021-05-01T12:00:00+02:00</published>
       <updated>2021-05-01T12:00:00+02:00</updated>
-      <id>https://eltallerdelhuerto.com/kicad-tutorial-como-empezar</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/kicad-tutorial-como-empezar">&lt;p&gt;KiCAD, que se pronuncia “Key CAD) es una herramienta open source que te permite diseñar circuitos. Me la ha recomendado un compañero del trabajo y voy a probarla.&lt;/p&gt;
+      <id>http://localhost:4000/kicad-tutorial-como-empezar</id>
+      <content type="html" xml:base="http://localhost:4000/kicad-tutorial-como-empezar">&lt;p&gt;KiCAD, que se pronuncia “Key CAD) es una herramienta open source que te permite diseñar circuitos. Me la ha recomendado un compañero del trabajo y voy a probarla.&lt;/p&gt;
 
 &lt;p&gt;Yo lo que voy a hacer es diseñar una PCB para un Arduino Nano, de forma que luego pueda soldarla.&lt;/p&gt;
 
@@ -189,11 +329,11 @@ Las flechas parece como que indican el sentido de la corriente, por lo que es se
   
     <entry>
       <title type="html">Programar cuidados en C: cómo empezar</title>
-      <link href="https://eltallerdelhuerto.com/programar-arduino-para-plantas" rel="alternate" type="text/html" title="Programar cuidados en C: cómo empezar" />
+      <link href="http://localhost:4000/programar-arduino-para-plantas" rel="alternate" type="text/html" title="Programar cuidados en C: cómo empezar" />
       <published>2020-06-04T12:00:00+02:00</published>
       <updated>2020-06-04T12:00:00+02:00</updated>
-      <id>https://eltallerdelhuerto.com/programar-arduino-para-plantas</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/programar-arduino-para-plantas">&lt;p&gt;C es el lenguaje de programación que usamos en Arduino para programar las tareas de cuidado que necesitan nuestras plantas.&lt;/p&gt;
+      <id>http://localhost:4000/programar-arduino-para-plantas</id>
+      <content type="html" xml:base="http://localhost:4000/programar-arduino-para-plantas">&lt;p&gt;C es el lenguaje de programación que usamos en Arduino para programar las tareas de cuidado que necesitan nuestras plantas.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Un lenguaje de programación se trata de un lenguaje pensado para instruir a un ordenador a ejecutar tareas&lt;/strong&gt;, como he comentado. Como cualquier lenguaje tiene una serie de reglas gramaticales y vocabulario.&lt;/p&gt;
 
@@ -358,11 +498,11 @@ Por ejemplo&lt;/li&gt;
   
     <entry>
       <title type="html">Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</title>
-      <link href="https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software" rel="alternate" type="text/html" title="Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software" />
+      <link href="http://localhost:4000/cambio-arduino-nano-8mhz-software" rel="alternate" type="text/html" title="Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software" />
       <published>2020-05-04T12:00:00+02:00</published>
       <updated>2020-05-04T12:00:00+02:00</updated>
-      <id>https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software">&lt;p&gt;Vamos a ver cómo modificar la frecuencia de reloj de la CPU de nuestro Arduino a través del software.&lt;/p&gt;
+      <id>http://localhost:4000/cambio-arduino-nano-8mhz-software</id>
+      <content type="html" xml:base="http://localhost:4000/cambio-arduino-nano-8mhz-software">&lt;p&gt;Vamos a ver cómo modificar la frecuencia de reloj de la CPU de nuestro Arduino a través del software.&lt;/p&gt;
 
 &lt;p&gt;Cuando hablamos de uso de sistemas IoT en el campo, la batería es algo muy importante ya que no siempre vamos a poder cargarla, es por ello que es crucial prestar atención a este punto. Si queremos optimizar nuestra batería para poder usar nuestra estación de control basada en Arduino de forma que no tengamos que preocuparnos, puedes seguir leyendo.&lt;/p&gt;
 
@@ -555,11 +695,11 @@ Hay que localizar el fichero &lt;em&gt;boards.txt&lt;/em&gt;, lo más sencillo e
   
     <entry>
       <title type="html">Arduno Nano funcionando a 3.7V y 16Mhz</title>
-      <link href="https://eltallerdelhuerto.com/arduino-nano-ttl-3v" rel="alternate" type="text/html" title="Arduno Nano funcionando a 3.7V y 16Mhz" />
+      <link href="http://localhost:4000/arduino-nano-ttl-3v" rel="alternate" type="text/html" title="Arduno Nano funcionando a 3.7V y 16Mhz" />
       <published>2020-04-27T12:00:00+02:00</published>
       <updated>2020-04-27T12:00:00+02:00</updated>
-      <id>https://eltallerdelhuerto.com/arduino-nano-ttl-3v</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/arduino-nano-ttl-3v">&lt;p&gt;Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso.&lt;/p&gt;
+      <id>http://localhost:4000/arduino-nano-ttl-3v</id>
+      <content type="html" xml:base="http://localhost:4000/arduino-nano-ttl-3v">&lt;p&gt;Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso.&lt;/p&gt;
 
 &lt;p&gt;En este post vamos a poner como ejemplo un Arduino Nano que no es la versión oficial, por lo que el diseño puede ser diferente.&lt;/p&gt;
 
@@ -634,11 +774,11 @@ Pero en cualquier caso, vamos a tener el problema de que &lt;strong&gt;el módul
   
     <entry>
       <title type="html">Sensor de humedad capacitivo vs resistivo</title>
-      <link href="https://eltallerdelhuerto.com/sensor-capacitivo-vs-resistivo" rel="alternate" type="text/html" title="Sensor de humedad capacitivo vs resistivo" />
+      <link href="http://localhost:4000/sensor-capacitivo-vs-resistivo" rel="alternate" type="text/html" title="Sensor de humedad capacitivo vs resistivo" />
       <published>2020-04-15T12:00:00+02:00</published>
       <updated>2020-04-15T12:00:00+02:00</updated>
-      <id>https://eltallerdelhuerto.com/sensor-capacitivo-vs-resistivo</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/sensor-capacitivo-vs-resistivo">&lt;p&gt;Por qué un sensor de humedad capacitivo es generalmente mejor opción que uno resistivo para nuestros proyectos.&lt;/p&gt;
+      <id>http://localhost:4000/sensor-capacitivo-vs-resistivo</id>
+      <content type="html" xml:base="http://localhost:4000/sensor-capacitivo-vs-resistivo">&lt;p&gt;Por qué un sensor de humedad capacitivo es generalmente mejor opción que uno resistivo para nuestros proyectos.&lt;/p&gt;
 
 &lt;p&gt;Cuando comenzamos un proyecto en el que la medición de la humedad del suelo es un factor básico en la monitorización y el cuidado de nuestras plantas y cultivos, tenemos que elegir un sensor.&lt;/p&gt;
 
@@ -762,11 +902,11 @@ En el caso del capacitivo, el dieléctrico no va a ser el suelo, sino el aire, p
   
     <entry>
       <title type="html">Arduino para el cuidado de plantas</title>
-      <link href="https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas" rel="alternate" type="text/html" title="Arduino para el cuidado de plantas" />
+      <link href="http://localhost:4000/arduino-para-el-cuidado-de-plantas" rel="alternate" type="text/html" title="Arduino para el cuidado de plantas" />
       <published>2020-03-26T11:00:00+01:00</published>
       <updated>2020-03-26T11:00:00+01:00</updated>
-      <id>https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas">&lt;p&gt;No solo se trata de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso.&lt;/p&gt;
+      <id>http://localhost:4000/arduino-para-el-cuidado-de-plantas</id>
+      <content type="html" xml:base="http://localhost:4000/arduino-para-el-cuidado-de-plantas">&lt;p&gt;No solo se trata de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso.&lt;/p&gt;
 
 &lt;p&gt;Yo uso Arduino como la pieza principal a la hora de controlar la humedad, riego o temperatura de mis plantas, pero veamos qué es realmente un microcontrolador. &lt;strong&gt;Un microcontrolador se trata de un circuito integrado que básicamente ejecuta operaciones programadas en base a unas entradas y unas salidas de datos.&lt;/strong&gt;&lt;/p&gt;
 
@@ -883,11 +1023,11 @@ En el caso del capacitivo, el dieléctrico no va a ser el suelo, sino el aire, p
   
     <entry>
       <title type="html">Construir una lámpara vintage usando restos de poda</title>
-      <link href="https://eltallerdelhuerto.com/diy-hacer-lampara-vintage" rel="alternate" type="text/html" title="Construir una lámpara vintage usando restos de poda" />
+      <link href="http://localhost:4000/diy-hacer-lampara-vintage" rel="alternate" type="text/html" title="Construir una lámpara vintage usando restos de poda" />
       <published>2020-03-26T11:00:00+01:00</published>
       <updated>2020-03-26T11:00:00+01:00</updated>
-      <id>https://eltallerdelhuerto.com/diy-hacer-lampara-vintage</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/diy-hacer-lampara-vintage">&lt;p&gt;Vamos a ver cómo usar la poda de rejuvenecimiento de un Almendro para hacer un trabajo de bricolaje.&lt;/p&gt;
+      <id>http://localhost:4000/diy-hacer-lampara-vintage</id>
+      <content type="html" xml:base="http://localhost:4000/diy-hacer-lampara-vintage">&lt;p&gt;Vamos a ver cómo usar la poda de rejuvenecimiento de un Almendro para hacer un trabajo de bricolaje.&lt;/p&gt;
 
 &lt;p&gt;El diseño vintage hace referencia a elementos antiguos que cobran un significado especial a día de hoy.&lt;/p&gt;
 
@@ -948,11 +1088,11 @@ En el caso del capacitivo, el dieléctrico no va a ser el suelo, sino el aire, p
   
     <entry>
       <title type="html">La poda de rejuvenecimiento de un viejo Almendro</title>
-      <link href="https://eltallerdelhuerto.com/poda-rejuvenecimiento-almendro" rel="alternate" type="text/html" title="La poda de rejuvenecimiento de un viejo Almendro" />
+      <link href="http://localhost:4000/poda-rejuvenecimiento-almendro" rel="alternate" type="text/html" title="La poda de rejuvenecimiento de un viejo Almendro" />
       <published>2020-02-04T11:00:00+01:00</published>
       <updated>2020-02-04T11:00:00+01:00</updated>
-      <id>https://eltallerdelhuerto.com/poda-rejuvenecimiento-almendro</id>
-      <content type="html" xml:base="https://eltallerdelhuerto.com/poda-rejuvenecimiento-almendro">&lt;p&gt;Lo que me hubiera gustado saber antes de hacer la poda de rejuvenecimiento de un Almendro.&lt;/p&gt;
+      <id>http://localhost:4000/poda-rejuvenecimiento-almendro</id>
+      <content type="html" xml:base="http://localhost:4000/poda-rejuvenecimiento-almendro">&lt;p&gt;Lo que me hubiera gustado saber antes de hacer la poda de rejuvenecimiento de un Almendro.&lt;/p&gt;
 
 &lt;h2 id=&quot;por-qué-le-podé-tan-severamente&quot;&gt;¿Por qué le podé tan severamente?&lt;/h2&gt;
 

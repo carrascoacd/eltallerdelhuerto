@@ -4,7 +4,22 @@
     <title>El taller del huerto - Articles</title>
     <description>Si eres curios@, aprende de forma práctica cómo aplicar la tecnología en el cuidado de tus plantas</description>
     <link>
-    https://eltallerdelhuerto.com</link>
+    http://localhost:4000</link>
+    
+      
+      <item>
+        <title>Ergonomía del teclado</title>
+        
+          <description>&lt;p&gt;Terminé el día con dolor de muñeca y pinchazos en el dedo índice derecho. ¿Qué hago ahora? Mañana me esperan otras 8 horas de trabajo.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 28 Feb 2025 11:00:00 +0100</pubDate>
+        <link>
+        http://localhost:4000/ergonomia-teclado</link>
+        <guid isPermaLink="true">http://localhost:4000/ergonomia-teclado</guid>
+      </item>
+      
     
       
       <item>
@@ -16,8 +31,8 @@
         
         <pubDate>Sat, 12 Feb 2022 11:00:00 +0100</pubDate>
         <link>
-        https://eltallerdelhuerto.com/mofset-switch</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/mofset-switch</guid>
+        http://localhost:4000/mofset-switch-copy</link>
+        <guid isPermaLink="true">http://localhost:4000/mofset-switch-copy</guid>
       </item>
       
     
@@ -31,8 +46,8 @@
         
         <pubDate>Sat, 01 May 2021 12:00:00 +0200</pubDate>
         <link>
-        https://eltallerdelhuerto.com/kicad-tutorial-como-empezar</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/kicad-tutorial-como-empezar</guid>
+        http://localhost:4000/kicad-tutorial-como-empezar</link>
+        <guid isPermaLink="true">http://localhost:4000/kicad-tutorial-como-empezar</guid>
       </item>
       
     
@@ -46,8 +61,8 @@
         
         <pubDate>Thu, 04 Jun 2020 12:00:00 +0200</pubDate>
         <link>
-        https://eltallerdelhuerto.com/programar-arduino-para-plantas</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/programar-arduino-para-plantas</guid>
+        http://localhost:4000/programar-arduino-para-plantas</link>
+        <guid isPermaLink="true">http://localhost:4000/programar-arduino-para-plantas</guid>
       </item>
       
     
@@ -61,8 +76,8 @@
         
         <pubDate>Mon, 04 May 2020 12:00:00 +0200</pubDate>
         <link>
-        https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/cambio-arduino-nano-8mhz-software</guid>
+        http://localhost:4000/cambio-arduino-nano-8mhz-software</link>
+        <guid isPermaLink="true">http://localhost:4000/cambio-arduino-nano-8mhz-software</guid>
       </item>
       
     
@@ -76,8 +91,8 @@
         
         <pubDate>Mon, 27 Apr 2020 12:00:00 +0200</pubDate>
         <link>
-        https://eltallerdelhuerto.com/arduino-nano-ttl-3v</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/arduino-nano-ttl-3v</guid>
+        http://localhost:4000/arduino-nano-ttl-3v</link>
+        <guid isPermaLink="true">http://localhost:4000/arduino-nano-ttl-3v</guid>
       </item>
       
     
@@ -91,8 +106,8 @@
         
         <pubDate>Wed, 15 Apr 2020 12:00:00 +0200</pubDate>
         <link>
-        https://eltallerdelhuerto.com/sensor-capacitivo-vs-resistivo</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/sensor-capacitivo-vs-resistivo</guid>
+        http://localhost:4000/sensor-capacitivo-vs-resistivo</link>
+        <guid isPermaLink="true">http://localhost:4000/sensor-capacitivo-vs-resistivo</guid>
       </item>
       
     
@@ -106,8 +121,8 @@
         
         <pubDate>Thu, 26 Mar 2020 11:00:00 +0100</pubDate>
         <link>
-        https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/arduino-para-el-cuidado-de-plantas</guid>
+        http://localhost:4000/arduino-para-el-cuidado-de-plantas</link>
+        <guid isPermaLink="true">http://localhost:4000/arduino-para-el-cuidado-de-plantas</guid>
       </item>
       
     
@@ -121,8 +136,8 @@
         
         <pubDate>Thu, 26 Mar 2020 11:00:00 +0100</pubDate>
         <link>
-        https://eltallerdelhuerto.com/diy-hacer-lampara-vintage</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/diy-hacer-lampara-vintage</guid>
+        http://localhost:4000/diy-hacer-lampara-vintage</link>
+        <guid isPermaLink="true">http://localhost:4000/diy-hacer-lampara-vintage</guid>
       </item>
       
     
@@ -136,8 +151,8 @@
         
         <pubDate>Tue, 04 Feb 2020 11:00:00 +0100</pubDate>
         <link>
-        https://eltallerdelhuerto.com/poda-rejuvenecimiento-almendro</link>
-        <guid isPermaLink="true">https://eltallerdelhuerto.com/poda-rejuvenecimiento-almendro</guid>
+        http://localhost:4000/poda-rejuvenecimiento-almendro</link>
+        <guid isPermaLink="true">http://localhost:4000/poda-rejuvenecimiento-almendro</guid>
       </item>
       
     

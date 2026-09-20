@@ -17,7 +17,7 @@ logo: assets/images/icon-rounded.png
 logo_dark: assets/images/icon-rounded.png
 favicon: assets/images/favicon
 url: https://eltallerdelhuerto.com
-source_url: https://github.com/jekyller/jasper2/
+source_url: https://github.com/carrascoacd/eltallerdelhuerto/
 CNAME: eltallerdelhuerto.com
 
 # Social info
@@ -59,25 +59,9 @@ feed:
 # Disqus comments as a per-post basis
 # ...
 
-# Settings for builing master branch with travis-ci
-# with jekyll-travis
+# Production URL used for social sharing links (see _includes/floating-header.html)
+production_url: https://eltallerdelhuerto.com/
 
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-safe: False
-lsi: False
-username: jekyller
-repo: jasper2
-branch: master
-relative_source: ../jasper2/
-destination: ../jasper2-pages/
-production_url:  https://eltallerdelhuerto.com/
-source_url:  https://eltallerdelhuerto.com/
 exclude:
   - assets/css
   - node_modules

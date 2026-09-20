@@ -103,10 +103,17 @@ Mis pulgares ahora soportaban el 15% de las pulsaciones. Decidí cambiar nuevame
 
 Tardé **6 meses en desarrollar el dolor y más de 6 en solucionarlo**. Mis aprendizajes clave:
 
-✔️ **Escucha tu cuerpo**. Si algo te duele, para y analiza qué cambió. ✔️ **Mide y ajusta**. Usa apps para ver cuántas veces pulsas cada tecla y adapta tu entorno. ✔️ **Consulta a profesionales**. Un fisioterapeuta puede ayudar, pero si no cambias tu ergonomía, nada mejorará. ✔️ **La ergonomía importa**. Un buen setup puede ahorrarte meses de dolor. ✔️ **Ejercicio y alimentación**. Fortalecer músculos y tendones es clave.
+**Escucha tu cuerpo**. Si algo te duele, para y analiza qué cambió. **Mide y ajusta**. Usa apps para ver cuántas veces pulsas cada tecla y adapta tu entorno. **Consulta a profesionales**. Un fisioterapeuta puede ayudar, pero si no cambias tu ergonomía, nada mejorará. **La ergonomía importa**. Un buen setup puede ahorrarte meses de dolor. **Ejercicio y alimentación**. Fortalecer músculos y tendones es clave.
 
 ## Mi setup final
 
-🔹 **Teclado:** Digma Defy, con distribución personalizada y dictado por voz nativo de mac. 🔹 **Ratón:** Logitech Lift (diestro y zurdo). 🔹 **Silla:** Steelcase Please I. 🔹 **Mesa:** Elevable de Ikea + reposapiés para buena postura. 🔹 **Pantalla:** HP 26” 4K. 🔹 **Descanso:** Cada 30 min. 🔹 **Ejercicio:** Fuerza y natación 2-3 veces/semana. 🔹 **Métricas:** Uso WhatPulse para controlar mi carga.
+- **Teclado:** Digma Defy, con distribución personalizada y dictado por voz nativo de mac. 
+- **Ratón:** Logitech Lift (diestro y zurdo). 
+- **Silla:** Steelcase Please I. 
+- **Mesa:** Elevable de Ikea + reposapiés para buena postura. 
+- **Pantalla:** HP 26” 4K. 
+- **Descanso:** Cada 30 min. 
+- **Ejercicio:** Fuerza y natación 2-3 veces/semana. 
+- **Métricas:** Uso WhatPulse para controlar mi carga.
 
-📌 **Dato final:** Tecleamos alrededor de **5 millones de teclas al año**.
+📌 **Dato final:** Pulsamos alrededor de **5 millones de teclas al año**.

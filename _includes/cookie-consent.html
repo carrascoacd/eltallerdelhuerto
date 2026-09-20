@@ -1,0 +1,12 @@
+<div id="cookie-notice">
+    <span>Nos gustaría poder usar cookies de terceros para mejorar tu experiencia en este sitio</span>
+<div><a id="cookie-notice-accept" class="btn btn-primary btn-sm">Aceptar | </a><a href="/privacy" class="btn btn-primary btn-sm">Más información</a></div>
+</div>
+
+<script>
+document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+    createCookie('cookie-notice-dismissed','true',31);
+    document.getElementById('cookie-notice').style.display = 'none';
+    location.reload();
+});
+</script>

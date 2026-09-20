@@ -1,0 +1,9 @@
+tecnologia:
+  name: Tecnología
+  description: Proyectos de tecnlogía en el mundo vegetal
+  cover: False
+plantas:
+  name: Plantas
+  description: Cuidados y aplicaciones
+  cover: False
+  

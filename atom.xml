@@ -1,160 +1,28 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>El taller del huerto - Articles</title>
-    <description>Si eres curios@, aprende de forma práctica cómo aplicar la tecnología en el cuidado de tus plantas</description>
+    <title>{{ site.name | xml_escape }} - Articles</title>
+    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
     <link>
-    http://localhost:4000</link>
-    
-      
+    {{ site.url }}</link>
+    {% for post in site.posts %}
+      {% unless post.link %}
       <item>
-        <title>Ergonomía del teclado</title>
-        
-          <description>&lt;p&gt;Terminé el día con dolor de muñeca y pinchazos en el dedo índice derecho. ¿Qué hago ahora? Mañana me esperan otras 8 horas de trabajo.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Fri, 28 Feb 2025 11:00:00 +0100</pubDate>
+        <title>{{ post.title | xml_escape }}</title>
+        {% if post.excerpt %}
+          <description>{{ post.excerpt | xml_escape }}</description>
+        {% else %}
+          <description>{{ post.content | xml_escape }}</description>
+        {% endif %}
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>
-        http://localhost:4000/ergonomia-teclado</link>
-        <guid isPermaLink="true">http://localhost:4000/ergonomia-teclado</guid>
+        {{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       </item>
-      
-    
-      
-      <item>
-        <title>Notas: MOFSETs como switch</title>
-        
-          <description>&lt;p&gt;En este post persigo guardar las notas que me serán útiles para entender el diseño que he llevado a cabo de un circuito switch con MOFSETs.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sat, 12 Feb 2022 11:00:00 +0100</pubDate>
-        <link>
-        http://localhost:4000/mofset-switch-copy</link>
-        <guid isPermaLink="true">http://localhost:4000/mofset-switch-copy</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>KiCAD</title>
-        
-          <description>&lt;p&gt;KiCAD, que se pronuncia “Key CAD) es una herramienta open source que te permite diseñar circuitos. Me la ha recomendado un compañero del trabajo y voy a probarla.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sat, 01 May 2021 12:00:00 +0200</pubDate>
-        <link>
-        http://localhost:4000/kicad-tutorial-como-empezar</link>
-        <guid isPermaLink="true">http://localhost:4000/kicad-tutorial-como-empezar</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Programar cuidados en C: cómo empezar</title>
-        
-          <description>&lt;p&gt;C es el lenguaje de programación que usamos en Arduino para programar las tareas de cuidado que necesitan nuestras plantas.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Thu, 04 Jun 2020 12:00:00 +0200</pubDate>
-        <link>
-        http://localhost:4000/programar-arduino-para-plantas</link>
-        <guid isPermaLink="true">http://localhost:4000/programar-arduino-para-plantas</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Cambio de frecuencia de Arduino Nano desde 18Mhz a 8Mhz por software</title>
-        
-          <description>&lt;p&gt;Vamos a ver cómo modificar la frecuencia de reloj de la CPU de nuestro Arduino a través del software.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Mon, 04 May 2020 12:00:00 +0200</pubDate>
-        <link>
-        http://localhost:4000/cambio-arduino-nano-8mhz-software</link>
-        <guid isPermaLink="true">http://localhost:4000/cambio-arduino-nano-8mhz-software</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Arduno Nano funcionando a 3.7V y 16Mhz</title>
-        
-          <description>&lt;p&gt;Cuando el rendimiento de las baterías es algo clave, podemos usar Arduino a 18Mhz con una batería de 3.7v y optimizar su uso.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Mon, 27 Apr 2020 12:00:00 +0200</pubDate>
-        <link>
-        http://localhost:4000/arduino-nano-ttl-3v</link>
-        <guid isPermaLink="true">http://localhost:4000/arduino-nano-ttl-3v</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Sensor de humedad capacitivo vs resistivo</title>
-        
-          <description>&lt;p&gt;Por qué un sensor de humedad capacitivo es generalmente mejor opción que uno resistivo para nuestros proyectos.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Wed, 15 Apr 2020 12:00:00 +0200</pubDate>
-        <link>
-        http://localhost:4000/sensor-capacitivo-vs-resistivo</link>
-        <guid isPermaLink="true">http://localhost:4000/sensor-capacitivo-vs-resistivo</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Arduino para el cuidado de plantas</title>
-        
-          <description>&lt;p&gt;No solo se trata de un microcontrolador que permite automatizar los cuidados de las plantas, Arduino es mucho más que eso.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Thu, 26 Mar 2020 11:00:00 +0100</pubDate>
-        <link>
-        http://localhost:4000/arduino-para-el-cuidado-de-plantas</link>
-        <guid isPermaLink="true">http://localhost:4000/arduino-para-el-cuidado-de-plantas</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Construir una lámpara vintage usando restos de poda</title>
-        
-          <description>&lt;p&gt;Vamos a ver cómo usar la poda de rejuvenecimiento de un Almendro para hacer un trabajo de bricolaje.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Thu, 26 Mar 2020 11:00:00 +0100</pubDate>
-        <link>
-        http://localhost:4000/diy-hacer-lampara-vintage</link>
-        <guid isPermaLink="true">http://localhost:4000/diy-hacer-lampara-vintage</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>La poda de rejuvenecimiento de un viejo Almendro</title>
-        
-          <description>&lt;p&gt;Lo que me hubiera gustado saber antes de hacer la poda de rejuvenecimiento de un Almendro.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Tue, 04 Feb 2020 11:00:00 +0100</pubDate>
-        <link>
-        http://localhost:4000/poda-rejuvenecimiento-almendro</link>
-        <guid isPermaLink="true">http://localhost:4000/poda-rejuvenecimiento-almendro</guid>
-      </item>
-      
-    
+      {% endunless %}
+    {% endfor %}
   </channel>
 </rss>
